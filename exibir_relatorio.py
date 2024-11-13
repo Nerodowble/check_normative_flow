@@ -1,8 +1,8 @@
-# exibir_relatorio.py
-
 def exibir_relatorio(clientes_dict, documentos_faltantes):
     """Exibir o relatório com detalhes de todos os clientes e documentos faltantes, incluindo taxonomias associadas."""
     print("\n===== Relatório de Normativos e Clientes =====")
+    
+    # Loop para exibir informações de cada cliente
     for cliente, dados in clientes_dict.items():
         print(f"\nCliente: {cliente}")
         print(f"Quantidade de documentos: {dados['total_documentos']}")
@@ -34,6 +34,7 @@ def exibir_relatorio(clientes_dict, documentos_faltantes):
 
         print("-----")
 
+    # Exibir documentos faltantes gerais que não estão associados a nenhum cliente específico
     if documentos_faltantes:
         print("\n===== Documentos Faltantes Gerais =====")
         for doc in documentos_faltantes:
@@ -41,4 +42,5 @@ def exibir_relatorio(clientes_dict, documentos_faltantes):
         print("===== Fim dos Documentos Faltantes =====")
     else:
         print("Nenhum documento faltante.")
+
     print("===== Fim do Relatório =====")

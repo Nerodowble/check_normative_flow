@@ -2,10 +2,23 @@ from bson import ObjectId
 from config import coll_normative_un, coll_un
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-def processar_normativo(normativo):
-    """Função para processar um normativo individual e retornar o cliente e dados relacionados."""
+def obter_cliente_id_por_nome(cliente_nome):
+    """
+    Busca o cliente na coleção 'un' pelo nome usando regex insensível a maiúsculas/minúsculas
+    e retorna o ID do cliente.
+    """
+    cliente = coll_un.find_one({"name": {"$regex": f".*{cliente_nome}.*", "$options": "i"}})
+    if cliente:
+        return str(cliente["_id"])
+    else:
+        print(f"Cliente com o nome '{cliente_nome}' não encontrado.")
+        return None
+
+def processar_normativo(normativo, cliente_id):
+    """Função para processar um normativo individual específico do cliente e retornar dados relacionados."""
     norm_id = normativo["_id"]
-    normative_un_data = list(coll_normative_un.find({"norm_un": norm_id}))
+    # Filtrar pela un_root que corresponde ao cliente_id fornecido
+    normative_un_data = list(coll_normative_un.find({"norm_un": norm_id, "un_root": ObjectId(cliente_id)}))
     cliente_dados = []
 
     if normative_un_data:
@@ -15,19 +28,29 @@ def processar_normativo(normativo):
             from_monitor = entry.get("from_monitor", False)
             associated_uns = entry.get("associated_uns", [])
 
-            if un_root:
+            # Verifica se o un_root corresponde ao cliente_id fornecido
+            if un_root == ObjectId(cliente_id):
                 cliente_data = coll_un.find_one({"_id": ObjectId(un_root)})
                 if cliente_data:
                     cliente_dados.append((cliente_data, stages, from_monitor, associated_uns))
     else:
-        # Retornar o normativo como faltante se não houver dados relevantes
+        # Retornar o normativo como faltante se não houver dados relevantes para o cliente específico
         return normativo, None
 
     return normativo, cliente_dados
 
-def verificar_normativos_clientes(normativos):
-    """Agrupa normativos por cliente e conta quantos estão em cada estágio, usando processamento paralelo."""
-    print("Iniciando verificação de normativos para todos os clientes...")
+def verificar_normativos_cliente(normativos, cliente_id=None, cliente_nome=None):
+    """
+    Agrupa normativos para um cliente específico, identificado pelo cliente_id ou cliente_nome,
+    e conta quantos estão em cada estágio.
+    """
+    # Se o cliente_id não for fornecido, buscar o ID a partir do nome do cliente
+    if not cliente_id and cliente_nome:
+        cliente_id = obter_cliente_id_por_nome(cliente_nome)
+        if not cliente_id:
+            return {}, []  # Retorna vazio se o cliente não foi encontrado
+
+    print(f"Iniciando verificação de normativos para o cliente com ID '{cliente_id}'...")
     clientes_dict = {}
     documentos_faltantes = []
     
@@ -36,7 +59,7 @@ def verificar_normativos_clientes(normativos):
 
     # Executar cada normativo em paralelo
     with ThreadPoolExecutor() as executor:
-        futures = [executor.submit(processar_normativo, normativo) for normativo in normativos]
+        futures = [executor.submit(processar_normativo, normativo, cliente_id) for normativo in normativos]
         
         for future in as_completed(futures):
             normativo, cliente_dados = future.result()
@@ -91,7 +114,7 @@ def verificar_normativos_clientes(normativos):
                     "link": normativo.get("link", "N/A")
                 })
 
-    # Comparar IDs de normativos para encontrar faltantes específicos de cada cliente
+    # Comparar IDs de normativos para encontrar faltantes específicos do cliente
     for cliente, dados in clientes_dict.items():
         ids_faltantes = todos_ids_normativos - dados["documentos_ids"]
         if ids_faltantes:
