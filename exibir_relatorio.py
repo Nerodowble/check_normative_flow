@@ -1,8 +1,7 @@
 def exibir_relatorio(clientes_dict, documentos_faltantes):
-    """Exibir o relatório com detalhes de todos os clientes e documentos faltantes, incluindo taxonomias associadas."""
-    print("\n===== Relatório de Normativos e Clientes =====")
+    """Exibe o relatório com detalhes de todos os clientes e documentos faltantes, incluindo taxonomias associadas."""
     
-    # Loop para exibir informações de cada cliente
+    print("\n===== Relatório de Normativos e Clientes =====")
     for cliente, dados in clientes_dict.items():
         print(f"\nCliente: {cliente}")
         print(f"Quantidade de documentos: {dados['total_documentos']}")
@@ -12,6 +11,9 @@ def exibir_relatorio(clientes_dict, documentos_faltantes):
         print(f"Quantidade de documentos na Busca: {dados['busca']}")
         print(f"Quantidade de documentos que vieram do Monitor: {dados['monitor']}")
         print(f"Quantidade de documentos que não vieram do Monitor: {dados['nao_monitor']}")
+        
+        # Exibir status de taxonomia automática
+        print(f"Taxonomia automática associada: {dados['taxonomia_auto_serviço']}")
 
         # Verificar documentos faltantes específicos do cliente
         if dados["documentos_faltantes"]:
@@ -21,20 +23,20 @@ def exibir_relatorio(clientes_dict, documentos_faltantes):
         else:
             print("Nenhum documento faltante para este cliente.")
 
-        # Exibir informações de taxonomias associadas
-        if "taxonomias_associadas" in dados:
-            print("\nTaxonomias Associadas para os Normativos deste Cliente:")
-            for taxonomia in dados["taxonomias_associadas"]:
-                print(f"Normativo ID: {taxonomia['normativo_id']}")
-                print(f"  - Taxonomia: {taxonomia['taxonomia']}")
-                print(f"  - Descrição: {taxonomia['descricao']}")
-                print(f"  - Associado ao Cliente: {'Sim' if taxonomia['associado_ao_cliente'] else 'Não'}")
+        # Exibir informações de taxonomias automáticas associadas
+        if isinstance(dados["taxonomia_auto_serviço"], dict):
+            print("\nTaxonomias Automáticas para os Normativos deste Cliente:")
+            print(f"Título: {dados['taxonomia_auto_serviço']['titulo']}")
+            print(f"Descrição: {dados['taxonomia_auto_serviço']['descricao']}")
+            print("Regras:")
+            for regra in dados["taxonomia_auto_serviço"]["regras"]:
+                print(f"  - Chave: {regra['key']}, Operador: {regra['operator']}, Valores: {regra['values']}")
         else:
             print("Nenhuma taxonomia associada para os normativos deste cliente.")
 
         print("-----")
 
-    # Exibir documentos faltantes gerais que não estão associados a nenhum cliente específico
+    # Exibição de documentos faltantes gerais
     if documentos_faltantes:
         print("\n===== Documentos Faltantes Gerais =====")
         for doc in documentos_faltantes:
@@ -42,5 +44,5 @@ def exibir_relatorio(clientes_dict, documentos_faltantes):
         print("===== Fim dos Documentos Faltantes =====")
     else:
         print("Nenhum documento faltante.")
-
+    
     print("===== Fim do Relatório =====")
