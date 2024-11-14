@@ -1,0 +1,376 @@
+[
+    {
+        "documento_id": "6731f56a1b7d4a9216c9caa6",
+        "title": "Comunicado N° 42.394, 11/11/2024",
+        "reason_not_captured": [
+            {
+                "monitor_id": "645a8ec7cecc1de8839266a1",
+                "captura_esperada": false,
+                "num_tags_positivas_encontradas": 0,
+                "lista_tags_positivas_encontradas": {},
+                "num_tags_negativas_encontradas": 0,
+                "lista_tags_negativas_encontradas": {},
+                "porcentagem_positivas": 0,
+                "porcentagem_negativas": 0,
+                "motivo": [
+                    "Nenhuma tag positiva obrigatória encontrada."
+                ]
+            },
+            {
+                "monitor_id": "645a9056cecc1de8839266a2",
+                "captura_esperada": false,
+                "num_tags_positivas_encontradas": 0,
+                "lista_tags_positivas_encontradas": {},
+                "num_tags_negativas_encontradas": 0,
+                "lista_tags_negativas_encontradas": {},
+                "porcentagem_positivas": 0,
+                "porcentagem_negativas": 0,
+                "motivo": [
+                    "Nenhuma tag positiva obrigatória encontrada."
+                ]
+            },
+            {
+                "monitor_id": "645a909a9dcad7cfc8a70a8e",
+                "captura_esperada": false,
+                "num_tags_positivas_encontradas": 0,
+                "lista_tags_positivas_encontradas": {},
+                "num_tags_negativas_encontradas": 0,
+                "lista_tags_negativas_encontradas": {},
+                "porcentagem_positivas": 0,
+                "porcentagem_negativas": 0,
+                "motivo": [
+                    "Nenhuma tag positiva obrigatória encontrada."
+                ]
+            },
+            {
+                "monitor_id": "645a96f29dcad7cfc8a70a8f",
+                "captura_esperada": false,
+                "num_tags_positivas_encontradas": 0,
+                "lista_tags_positivas_encontradas": {},
+                "num_tags_negativas_encontradas": 0,
+                "lista_tags_negativas_encontradas": {},
+                "porcentagem_positivas": 0,
+                "porcentagem_negativas": 0,
+                "motivo": [
+                    "Nenhuma tag positiva obrigatória encontrada."
+                ]
+            },
+            {
+                "monitor_id": "6467acbb8e2793241d7a7671",
+                "captura_esperada": false,
+                "num_tags_positivas_encontradas": 0,
+                "lista_tags_positivas_encontradas": {},
+                "num_tags_negativas_encontradas": 0,
+                "lista_tags_negativas_encontradas": {},
+                "porcentagem_positivas": 0,
+                "porcentagem_negativas": 0,
+                "motivo": [
+                    "Nenhuma tag positiva obrigatória encontrada."
+                ]
+            },
+            {
+                "monitor_id": "647e42c68e2793241d7a7674",
+                "captura_esperada": false,
+                "num_tags_positivas_encontradas": 0,
+                "lista_tags_positivas_encontradas": {},
+                "num_tags_negativas_encontradas": 0,
+                "lista_tags_negativas_encontradas": {},
+                "porcentagem_positivas": 0,
+                "porcentagem_negativas": 0,
+                "motivo": [
+                    "Nenhuma tag positiva obrigatória encontrada."
+                ]
+            },
+            {
+                "monitor_id": "647f7f42f7c169a25b1caf00",
+                "captura_esperada": false,
+                "num_tags_positivas_encontradas": 0,
+                "lista_tags_positivas_encontradas": {},
+                "num_tags_negativas_encontradas": 0,
+                "lista_tags_negativas_encontradas": {},
+                "porcentagem_positivas": 0,
+                "porcentagem_negativas": 0,
+                "motivo": [
+                    "Nenhuma tag positiva obrigatória encontrada."
+                ]
+            },
+            {
+                "monitor_id": "647f8400f7c169a25b1caf01",
+                "captura_esperada": false,
+                "num_tags_positivas_encontradas": 0,
+                "lista_tags_positivas_encontradas": {},
+                "num_tags_negativas_encontradas": 0,
+                "lista_tags_negativas_encontradas": {},
+                "porcentagem_positivas": 0,
+                "porcentagem_negativas": 0,
+                "motivo": [
+                    "Nenhuma tag positiva obrigatória encontrada."
+                ]
+            },
+            {
+                "monitor_id": "647f84508e2793241d7a7675",
+                "captura_esperada": false,
+                "num_tags_positivas_encontradas": 0,
+                "lista_tags_positivas_encontradas": {},
+                "num_tags_negativas_encontradas": 0,
+                "lista_tags_negativas_encontradas": {},
+                "porcentagem_positivas": 0,
+                "porcentagem_negativas": 0,
+                "motivo": [
+                    "Nenhuma tag positiva obrigatória encontrada."
+                ]
+            },
+            {
+                "monitor_id": "647f845ce69ea204db29a32c",
+                "captura_esperada": false,
+                "num_tags_positivas_encontradas": 0,
+                "lista_tags_positivas_encontradas": {},
+                "num_tags_negativas_encontradas": 0,
+                "lista_tags_negativas_encontradas": {},
+                "porcentagem_positivas": 0,
+                "porcentagem_negativas": 0,
+                "motivo": [
+                    "Nenhuma tag positiva obrigatória encontrada."
+                ]
+            },
+            {
+                "monitor_id": "647f84aaf7c169a25b1caf02",
+                "captura_esperada": false,
+                "num_tags_positivas_encontradas": 0,
+                "lista_tags_positivas_encontradas": {},
+                "num_tags_negativas_encontradas": 0,
+                "lista_tags_negativas_encontradas": {},
+                "porcentagem_positivas": 0,
+                "porcentagem_negativas": 0,
+                "motivo": [
+                    "Nenhuma tag positiva obrigatória encontrada."
+                ]
+            },
+            {
+                "monitor_id": "647f85ca8e2793241d7a7676",
+                "captura_esperada": false,
+                "num_tags_positivas_encontradas": 0,
+                "lista_tags_positivas_encontradas": {},
+                "num_tags_negativas_encontradas": 0,
+                "lista_tags_negativas_encontradas": {},
+                "porcentagem_positivas": 0,
+                "porcentagem_negativas": 0,
+                "motivo": [
+                    "Nenhuma tag positiva obrigatória encontrada."
+                ]
+            },
+            {
+                "monitor_id": "647f861ff7c169a25b1caf03",
+                "captura_esperada": false,
+                "num_tags_positivas_encontradas": 0,
+                "lista_tags_positivas_encontradas": {},
+                "num_tags_negativas_encontradas": 0,
+                "lista_tags_negativas_encontradas": {},
+                "porcentagem_positivas": 0,
+                "porcentagem_negativas": 0,
+                "motivo": [
+                    "Nenhuma tag positiva obrigatória encontrada."
+                ]
+            },
+            {
+                "monitor_id": "647f86e48e2793241d7a7677",
+                "captura_esperada": false,
+                "num_tags_positivas_encontradas": 0,
+                "lista_tags_positivas_encontradas": {},
+                "num_tags_negativas_encontradas": 0,
+                "lista_tags_negativas_encontradas": {},
+                "porcentagem_positivas": 0,
+                "porcentagem_negativas": 0,
+                "motivo": [
+                    "Nenhuma tag positiva obrigatória encontrada."
+                ]
+            },
+            {
+                "monitor_id": "647f87998e2793241d7a7678",
+                "captura_esperada": false,
+                "num_tags_positivas_encontradas": 0,
+                "lista_tags_positivas_encontradas": {},
+                "num_tags_negativas_encontradas": 0,
+                "lista_tags_negativas_encontradas": {},
+                "porcentagem_positivas": 0,
+                "porcentagem_negativas": 0,
+                "motivo": [
+                    "Nenhuma tag positiva obrigatória encontrada."
+                ]
+            },
+            {
+                "monitor_id": "647f8848f7c169a25b1caf04",
+                "captura_esperada": false,
+                "num_tags_positivas_encontradas": 0,
+                "lista_tags_positivas_encontradas": {},
+                "num_tags_negativas_encontradas": 0,
+                "lista_tags_negativas_encontradas": {},
+                "porcentagem_positivas": 0,
+                "porcentagem_negativas": 0,
+                "motivo": [
+                    "Nenhuma tag positiva obrigatória encontrada."
+                ]
+            },
+            {
+                "monitor_id": "647f88918e2793241d7a7679",
+                "captura_esperada": false,
+                "num_tags_positivas_encontradas": 0,
+                "lista_tags_positivas_encontradas": {},
+                "num_tags_negativas_encontradas": 0,
+                "lista_tags_negativas_encontradas": {},
+                "porcentagem_positivas": 0,
+                "porcentagem_negativas": 0,
+                "motivo": [
+                    "Nenhuma tag positiva obrigatória encontrada."
+                ]
+            },
+            {
+                "monitor_id": "647f89eff7c169a25b1caf05",
+                "captura_esperada": false,
+                "num_tags_positivas_encontradas": 0,
+                "lista_tags_positivas_encontradas": {},
+                "num_tags_negativas_encontradas": 0,
+                "lista_tags_negativas_encontradas": {},
+                "porcentagem_positivas": 0,
+                "porcentagem_negativas": 0,
+                "motivo": [
+                    "Nenhuma tag positiva obrigatória encontrada."
+                ]
+            },
+            {
+                "monitor_id": "647f8a33f7c169a25b1caf06",
+                "captura_esperada": false,
+                "num_tags_positivas_encontradas": 0,
+                "lista_tags_positivas_encontradas": {},
+                "num_tags_negativas_encontradas": 0,
+                "lista_tags_negativas_encontradas": {},
+                "porcentagem_positivas": 0,
+                "porcentagem_negativas": 0,
+                "motivo": [
+                    "Nenhuma tag positiva obrigatória encontrada."
+                ]
+            },
+            {
+                "monitor_id": "647f8af28e2793241d7a767a",
+                "captura_esperada": false,
+                "num_tags_positivas_encontradas": 0,
+                "lista_tags_positivas_encontradas": {},
+                "num_tags_negativas_encontradas": 0,
+                "lista_tags_negativas_encontradas": {},
+                "porcentagem_positivas": 0,
+                "porcentagem_negativas": 0,
+                "motivo": [
+                    "Nenhuma tag positiva obrigatória encontrada."
+                ]
+            },
+            {
+                "monitor_id": "647f8b7ce69ea204db29a32d",
+                "captura_esperada": false,
+                "num_tags_positivas_encontradas": 0,
+                "lista_tags_positivas_encontradas": {},
+                "num_tags_negativas_encontradas": 0,
+                "lista_tags_negativas_encontradas": {},
+                "porcentagem_positivas": 0,
+                "porcentagem_negativas": 0,
+                "motivo": [
+                    "Nenhuma tag positiva obrigatória encontrada."
+                ]
+            },
+            {
+                "monitor_id": "647f8bc7e69ea204db29a32e",
+                "captura_esperada": false,
+                "num_tags_positivas_encontradas": 0,
+                "lista_tags_positivas_encontradas": {},
+                "num_tags_negativas_encontradas": 0,
+                "lista_tags_negativas_encontradas": {},
+                "porcentagem_positivas": 0,
+                "porcentagem_negativas": 0,
+                "motivo": [
+                    "Nenhuma tag positiva obrigatória encontrada."
+                ]
+            },
+            {
+                "monitor_id": "6499ebb1bfaafbc9bed9242e",
+                "captura_esperada": false,
+                "num_tags_positivas_encontradas": 0,
+                "lista_tags_positivas_encontradas": {},
+                "num_tags_negativas_encontradas": 0,
+                "lista_tags_negativas_encontradas": {},
+                "porcentagem_positivas": 0,
+                "porcentagem_negativas": 0,
+                "motivo": [
+                    "Nenhuma tag positiva obrigatória encontrada."
+                ]
+            },
+            {
+                "monitor_id": "64d3d708e46b6ee23ef94218",
+                "captura_esperada": false,
+                "num_tags_positivas_encontradas": 0,
+                "lista_tags_positivas_encontradas": {},
+                "num_tags_negativas_encontradas": 0,
+                "lista_tags_negativas_encontradas": {},
+                "porcentagem_positivas": 0,
+                "porcentagem_negativas": 0,
+                "motivo": [
+                    "Nenhuma tag positiva obrigatória encontrada."
+                ]
+            },
+            {
+                "monitor_id": "6513128be46b6ee23ef94254",
+                "captura_esperada": false,
+                "num_tags_positivas_encontradas": 0,
+                "lista_tags_positivas_encontradas": {},
+                "num_tags_negativas_encontradas": 0,
+                "lista_tags_negativas_encontradas": {},
+                "porcentagem_positivas": 0,
+                "porcentagem_negativas": 0,
+                "motivo": [
+                    "Nenhuma tag positiva obrigatória encontrada."
+                ]
+            },
+            {
+                "monitor_id": "651ef0f2f4f946f8f1550133",
+                "captura_esperada": false,
+                "num_tags_positivas_encontradas": 0,
+                "lista_tags_positivas_encontradas": {},
+                "num_tags_negativas_encontradas": 0,
+                "lista_tags_negativas_encontradas": {},
+                "porcentagem_positivas": 0,
+                "porcentagem_negativas": 0,
+                "motivo": [
+                    "Nenhuma tag positiva obrigatória encontrada."
+                ]
+            },
+            {
+                "monitor_id": "65eb67b601a0620d218ae33b",
+                "captura_esperada": false,
+                "num_tags_positivas_encontradas": 0,
+                "lista_tags_positivas_encontradas": {},
+                "num_tags_negativas_encontradas": 0,
+                "lista_tags_negativas_encontradas": {},
+                "porcentagem_positivas": 0,
+                "porcentagem_negativas": 0,
+                "motivo": [
+                    "Nenhuma tag positiva obrigatória encontrada."
+                ]
+            },
+            {
+                "monitor_id": "65eb67f701a0620d218ae33f",
+                "captura_esperada": false,
+                "num_tags_positivas_encontradas": 0,
+                "lista_tags_positivas_encontradas": {},
+                "num_tags_negativas_encontradas": 0,
+                "lista_tags_negativas_encontradas": {},
+                "porcentagem_positivas": 0,
+                "porcentagem_negativas": 0,
+                "motivo": [
+                    "Nenhuma tag positiva obrigatória encontrada."
+                ]
+            }
+        ],
+        "summary": {
+            "total_tags_positivas_encontradas": 0,
+            "total_tags_negativas_encontradas": 0
+        }
+    }
+]

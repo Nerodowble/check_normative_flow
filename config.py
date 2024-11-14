@@ -19,3 +19,4 @@ coll_norm = db['norm']
 coll_normative_un = db['normative_un']
 coll_un = db['un']
 coll_routing_rule = db['routing_rule']  # Adicionado para acessar a coleção de regras de roteamento
+coll_monitor = db['monitor']

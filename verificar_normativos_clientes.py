@@ -1,5 +1,5 @@
 from bson import ObjectId
-from config import coll_normative_un, coll_un
+from config import coll_normative_un, coll_un, coll_routing_rule
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 def obter_cliente_id_por_nome(cliente_nome):
@@ -13,6 +13,28 @@ def obter_cliente_id_por_nome(cliente_nome):
     else:
         print(f"Cliente com o nome '{cliente_nome}' não encontrado.")
         return None
+
+def verificar_taxonomia_auto_servico(cliente_id):
+    """
+    Verifica se o cliente possui taxonomia automática associada na collection 'routing-rule'.
+    Retorna as regras de taxonomia se encontradas.
+    """
+    taxonomia_associada = coll_routing_rule.find_one({"company_id": ObjectId(cliente_id)})
+    if taxonomia_associada:
+        # Extrai as regras associadas e formata para o relatório
+        regras = taxonomia_associada.get("rules", [])
+        titulo = taxonomia_associada.get("title", "Taxonomia sem título")
+        descricao = taxonomia_associada.get("subject", "Sem descrição")
+        
+        # Construir uma estrutura de dados para as taxonomias
+        taxonomias_auto = {
+            "titulo": titulo,
+            "descricao": descricao,
+            "regras": regras
+        }
+        return taxonomias_auto
+    else:
+        return "Não existe taxonomia associada a esse cliente"
 
 def processar_normativo(normativo, cliente_id):
     """Função para processar um normativo individual específico do cliente e retornar dados relacionados."""
@@ -50,6 +72,10 @@ def verificar_normativos_cliente(normativos, cliente_id=None, cliente_nome=None)
         if not cliente_id:
             return {}, []  # Retorna vazio se o cliente não foi encontrado
 
+    # Verificar a existência de taxonomia automática associada ao cliente
+    taxonomia_auto_servico_status = verificar_taxonomia_auto_servico(cliente_id)
+    print(f"Status da Taxonomia Automática para o Cliente '{cliente_nome}': {taxonomia_auto_servico_status}")
+
     print(f"Iniciando verificação de normativos para o cliente com ID '{cliente_id}'...")
     clientes_dict = {}
     documentos_faltantes = []
@@ -80,7 +106,8 @@ def verificar_normativos_cliente(normativos, cliente_id=None, cliente_nome=None)
                             "busca": 0,
                             "monitor": 0,
                             "nao_monitor": 0,
-                            "documentos_ids": set()
+                            "documentos_ids": set(),
+                            "taxonomia_auto_serviço": taxonomia_auto_servico_status  # Adiciona status de taxonomia
                         }
 
                     # Contabilizar documento no cliente apenas se o status for ativo
