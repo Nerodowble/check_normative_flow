@@ -1,6 +1,6 @@
-#DOCUMENTAÇÃO - 18/11/2024
+--#DOCUMENTAÇÃO - 18/11/2024
 
-Documentação: main.py
+-- Documentação: main.py
 Descrição Geral
 O main.py é o ponto de entrada do sistema, responsável por orquestrar todas as operações principais. Ele conecta as diferentes funcionalidades do projeto, interagindo com o usuário e gerenciando o fluxo de validações e verificações.
 
@@ -93,7 +93,7 @@ Interface Gráfica: Criar uma interface visual (GUI) ou uma API REST para substi
 
 ----------------------
 
-Documentação: buscar_normativos.py
+-- Documentação: buscar_normativos.py
 Descrição Geral
 O buscar_normativos.py é responsável por realizar a consulta de normativos na base de dados, utilizando critérios como origem e intervalo de datas fornecidos pelo usuário. Ele atua como o módulo inicial para identificar normativos relevantes a serem processados.
 
@@ -192,7 +192,7 @@ Validação de Parâmetros: Garantir que os parâmetros origin, data_inicial e d
 ------------------------
 
 
-Documentação: verificar_normativos_clientes.py
+-- Documentação: verificar_normativos_clientes.py
 Descrição Geral
 O arquivo verificar_normativos_clientes.py é responsável por verificar a associação entre os normativos e um cliente específico. Ele identifica quais normativos são relevantes, quais estão associados ao cliente e quais estão faltando, categorizando os dados encontrados.
 
@@ -364,10 +364,7 @@ Configuração Dinâmica de Stages: Permitir que os estágios sejam configuráve
 ----------------------------
 
 
-
-Segue a documentação detalhada para o arquivo verificar_taxonomia.py:
-
-Documentação: verificar_taxonomia.py
+-- Documentação: verificar_taxonomia.py
 Descrição Geral
 O arquivo verificar_taxonomia.py é responsável por validar se um normativo específico possui uma taxonomia associada. Essa validação ocorre utilizando as coleções MongoDB relevantes, verificando a associação de regras e taxonomias ao normativo.
 
@@ -490,7 +487,7 @@ Integração de Cache: Implementar cache para reduzir chamadas repetitivas ao ba
 --------------------------------
 
 
-Documentação: verificar_monitoramento.py
+-- Documentação: verificar_monitoramento.py
 Descrição Geral
 O arquivo verificar_monitoramento.py é responsável por validar se normativos estão sendo capturados corretamente pelos monitores criados para um cliente específico. Ele verifica se as regras de monitoramento (baseadas em origem, tags positivas e negativas, e outras condições) estão sendo aplicadas corretamente.
 
@@ -675,7 +672,7 @@ Integração de Logs: Implementar logs para rastrear etapas críticas do process
 ------------------------------------
 
 
-Documentação: exibir_relatorio.py
+-- Documentação: exibir_relatorio.py
 Descrição Geral
 O arquivo exibir_relatorio.py é responsável por exibir um relatório consolidado no terminal, detalhando informações dos normativos processados e as associações de taxonomia para cada cliente.
 
@@ -808,7 +805,7 @@ Exibir mensagens de log em tempo real durante a geração do relatório.
 ------------------------------
 
 
-Documentação: config.py
+-- Documentação: config.py
 Descrição Geral
 O arquivo config.py gerencia a configuração central do projeto, incluindo a conexão com o banco de dados MongoDB e quaisquer outras configurações globais necessárias para o funcionamento do sistema.
 
@@ -904,7 +901,7 @@ Adicionar comentários sobre o propósito de cada coleção para facilitar o ent
 ----------------------------
 
 
-Documentação: .env
+-- Documentação: .env
 Descrição Geral
 O arquivo .env contém variáveis de ambiente que são utilizadas para configurar aspectos críticos do sistema, como a conexão ao banco de dados MongoDB. Este arquivo é essencial para manter credenciais e informações sensíveis fora do código-fonte, garantindo maior segurança e flexibilidade.
 
