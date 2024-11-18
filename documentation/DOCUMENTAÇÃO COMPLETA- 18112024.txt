@@ -1,0 +1,983 @@
+#DOCUMENTAÇÃO - 18/11/2024
+
+Documentação: main.py
+Descrição Geral
+O main.py é o ponto de entrada do sistema, responsável por orquestrar todas as operações principais. Ele conecta as diferentes funcionalidades do projeto, interagindo com o usuário e gerenciando o fluxo de validações e verificações.
+
+Objetivo
+Receber parâmetros de entrada do usuário (cliente, origem, datas).
+Integrar os módulos de busca de normativos, validação de taxonomias e monitoramento.
+Exibir relatórios detalhados sobre os resultados obtidos.
+Fluxo Lógico
+Recebimento de Parâmetros:
+
+Solicita do usuário informações do cliente:
+ID: Identifica diretamente o cliente pela chave primária.
+Nome: Utiliza um mecanismo de busca regex para encontrar o cliente com nome aproximado.
+Coleta informações sobre:
+Origem do normativo.
+Datas de início e fim para busca.
+Execução de Módulos:
+
+Busca de Normativos:
+Consulta normativos na base de dados com os filtros de origem e intervalo de datas.
+Verificação de Normativos para o Cliente:
+Identifica quais normativos estão associados ao cliente em diferentes estágios (pré-envio, pós-envio, busca, etc.).
+Lista normativos faltantes e verifica associações com taxonomias.
+Validação de Taxonomias:
+Verifica se os normativos estão associados a regras de taxonomias automáticas.
+Monitoramento:
+Valida se os normativos foram capturados corretamente pelos monitores associados ao cliente.
+Apresenta motivos de falhas, se aplicável.
+Exibição de Relatórios:
+
+Gera um relatório completo com:
+Detalhes dos normativos processados.
+Associações de taxonomias.
+Resultados de monitoramento.
+Salva os resultados em formato JSON e exibe no console.
+Trechos de Código e Funções Importantes
+Solicitação de Parâmetros:
+
+python
+Copiar código
+escolha_cliente = input("Você quer informar o ID ou o Nome do cliente? (Digite 'ID' ou 'Nome'): ").strip().lower()
+if escolha_cliente == 'id':
+    cliente_id = input("Informe o ID do cliente: ").strip()
+elif escolha_cliente == 'nome':
+    cliente_nome = input("Informe o Nome do cliente: ").strip()
+else:
+    print("Entrada inválida. Por favor, execute o script novamente e informe 'ID' ou 'Nome'.")
+    exit(1)
+Busca de Normativos:
+
+python
+Copiar código
+normativos = buscar_normativos(origin, data_inicial, data_final)
+Validação para o Cliente:
+
+python
+Copiar código
+clientes_dict, documentos_faltantes = verificar_normativos_cliente(
+    normativos, cliente_id=cliente_id, cliente_nome=cliente_nome)
+Verificação de Taxonomias e Monitoramento:
+
+python
+Copiar código
+for cliente_nome, dados_cliente in clientes_dict.items():
+    if dados_cliente["documentos_faltantes"]:
+        for doc in dados_cliente["documentos_faltantes"]:
+            normativo_id = str(doc["_id"])
+            resultado_taxonomia = verificar_taxonomia(normativo_id)
+            if resultado_taxonomia:
+                # Adiciona informações de taxonomia ao relatório
+                dados_cliente.setdefault("taxonomias_associadas", []).append(resultado_taxonomia)
+Exibição Final do Relatório:
+
+python
+Copiar código
+exibir_relatorio(clientes_dict, documentos_faltantes)
+Conceitos e Justificativas
+Orquestração Modular: O main.py atua como um controlador principal, garantindo que cada módulo seja executado no momento certo e receba os dados necessários para funcionar.
+
+Entrada do Usuário: A flexibilidade para buscar clientes por ID ou Nome é importante para diferentes contextos de uso.
+
+Relatórios Detalhados: A geração de relatórios legíveis é crucial para o entendimento tanto da equipe técnica quanto de gestão.
+
+Sugestões para Futuras Melhorias
+Validação de Entrada: Implementar uma validação mais robusta para as entradas do usuário.
+
+Paralelismo: Expandir o uso de paralelismo em todo o fluxo para reduzir o tempo de execução, especialmente para clientes com muitos normativos associados.
+
+Interface Gráfica: Criar uma interface visual (GUI) ou uma API REST para substituir a interação via console.
+
+----------------------
+
+Documentação: buscar_normativos.py
+Descrição Geral
+O buscar_normativos.py é responsável por realizar a consulta de normativos na base de dados, utilizando critérios como origem e intervalo de datas fornecidos pelo usuário. Ele atua como o módulo inicial para identificar normativos relevantes a serem processados.
+
+Objetivo
+Consultar normativos na base de dados com base nos filtros:
+Origem: Identifica a entidade responsável pelo normativo (ex.: BACEN, Receita Federal).
+Intervalo de Datas: Delimita a busca por normativos publicados em um período específico.
+Fluxo Lógico
+Recebimento de Parâmetros:
+
+origin: A origem do normativo (ex.: BACEN, Receita Federal/DOU).
+data_inicial e data_final: Datas delimitadoras da consulta, no formato ISO (YYYY-MM-DD).
+Execução da Query:
+
+Consulta a base de dados MongoDB na coleção de normativos com base nos filtros especificados.
+Retorno dos Resultados:
+
+Retorna uma lista de normativos que correspondem aos critérios definidos.
+Trechos de Código e Funções Importantes
+Função Principal: buscar_normativos
+python
+Copiar código
+from config import coll_norm
+
+def buscar_normativos(origin, data_inicial, data_final):
+    """
+    Busca normativos na base de dados filtrando por origem e intervalo de datas.
+
+    Args:
+        origin (str): Origem do normativo (ex.: BACEN, Receita Federal/DOU).
+        data_inicial (str): Data inicial no formato 'YYYY-MM-DD'.
+        data_final (str): Data final no formato 'YYYY-MM-DD'.
+
+    Returns:
+        list: Lista de normativos que atendem aos critérios.
+    """
+    print(f"Buscando normativos para origem '{origin}' entre {data_inicial} e {data_final}...")
+
+    # Query no MongoDB
+    query = {
+        "origin": origin,
+        "publish_date": {
+            "$gte": data_inicial,
+            "$lte": data_final
+        }
+    }
+    
+    # Executa a busca na coleção `coll_norm`
+    normativos = list(coll_norm.find(query))
+    print(f"Encontrados {len(normativos)} normativos para origem '{origin}'.")
+    
+    return normativos
+Conceitos e Justificativas
+Consulta Estruturada: A query MongoDB é construída dinamicamente para refletir os critérios do usuário, garantindo flexibilidade e precisão na busca.
+
+Filtragem por Datas: O uso de $gte (maior ou igual) e $lte (menor ou igual) assegura que normativos dentro do intervalo completo sejam retornados.
+
+Retorno em Lista: Os normativos são retornados como uma lista de dicionários Python, facilitando o processamento subsequente pelos módulos do sistema.
+
+Exemplo de Execução
+Entrada:
+python
+Copiar código
+origin = "BACEN"
+data_inicial = "2024-01-01"
+data_final = "2024-12-31"
+Saída:
+python
+Copiar código
+[
+    {
+        "_id": ObjectId("123456789abcdef"),
+        "origin": "BACEN",
+        "publish_date": "2024-05-15",
+        "title": "Normativo Exemplo",
+        "subject": "Assunto do normativo",
+        "link": "https://example.com/normativo"
+    },
+    ...
+]
+Pontos Técnicos Importantes
+Conexão com a Base de Dados: A função utiliza a coleção configurada no config.py (coll_norm) para buscar os normativos.
+
+Flexibilidade: O módulo é projetado para funcionar com qualquer origem e intervalo de datas, desde que os dados existam na base.
+
+Performance: A busca MongoDB é eficiente para índices bem configurados (ex.: índice nas colunas origin e publish_date).
+
+Sugestões para Futuras Melhorias
+Paginação: Implementar paginação para lidar com grandes volumes de dados, retornando resultados em blocos.
+
+Mensagens de Log: Adicionar logs detalhados para rastrear consultas e identificar potenciais problemas na query.
+
+Validação de Parâmetros: Garantir que os parâmetros origin, data_inicial e data_final estejam no formato correto antes de executar a consulta.
+
+
+------------------------
+
+
+Documentação: verificar_normativos_clientes.py
+Descrição Geral
+O arquivo verificar_normativos_clientes.py é responsável por verificar a associação entre os normativos e um cliente específico. Ele identifica quais normativos são relevantes, quais estão associados ao cliente e quais estão faltando, categorizando os dados encontrados.
+
+Objetivo
+Associar normativos a um cliente com base em dados da base MongoDB.
+Verificar quais normativos estão presentes e ausentes para o cliente.
+Classificar os normativos de acordo com diferentes estágios (pré-envio, pós-envio, monitoramento, etc.).
+Fluxo Lógico
+Identificação do Cliente:
+
+Recebe o ID (cliente_id) ou nome (cliente_nome) do cliente.
+Busca o ID do cliente na base de dados, caso apenas o nome seja informado.
+Processamento dos Normativos:
+
+Para cada normativo:
+Verifica associações ao cliente e os estágios de processamento.
+Se não associado, adiciona o normativo à lista de documentos faltantes.
+Classificação:
+
+Classifica normativos por estágio (pré-envio, pós-envio com ou sem caixa de entrada, busca, monitor).
+Retorno dos Resultados:
+
+Um dicionário com dados detalhados por cliente.
+Lista de documentos faltantes gerais.
+Trechos de Código e Funções Importantes
+Função Principal: verificar_normativos_cliente
+python
+Copiar código
+from bson import ObjectId
+from config import coll_normative_un, coll_un
+from concurrent.futures import ThreadPoolExecutor, as_completed
+
+def verificar_normativos_cliente(normativos, cliente_id=None, cliente_nome=None):
+    """
+    Verifica e classifica normativos associados a um cliente específico.
+
+    Args:
+        normativos (list): Lista de normativos a serem verificados.
+        cliente_id (str): ID do cliente (opcional).
+        cliente_nome (str): Nome do cliente (opcional).
+
+    Returns:
+        tuple: Dicionário com dados de clientes e lista de documentos faltantes.
+    """
+    if not cliente_id and cliente_nome:
+        cliente_id = obter_cliente_id_por_nome(cliente_nome)
+        if not cliente_id:
+            return {}, []
+
+    print(f"Iniciando verificação de normativos para o cliente com ID '{cliente_id}'...")
+    clientes_dict = {}
+    documentos_faltantes = []
+    
+    todos_ids_normativos = {str(normativo["_id"]) for normativo in normativos}
+
+    with ThreadPoolExecutor() as executor:
+        futures = [executor.submit(processar_normativo, normativo, cliente_id) for normativo in normativos]
+        
+        for future in as_completed(futures):
+            normativo, cliente_dados = future.result()
+            norm_id_str = str(normativo["_id"])
+            
+            if cliente_dados:
+                for cliente_data, stages, from_monitor, associated_uns in cliente_dados:
+                    cliente_nome = cliente_data.get("name", "Desconhecido")
+                    cliente_status = cliente_data.get("status")
+
+                    if cliente_nome not in clientes_dict:
+                        clientes_dict[cliente_nome] = {
+                            "total_documentos": 0,
+                            "pre_envio": 0,
+                            "pos_envio_caixa_entrada": 0,
+                            "pos_envio_sem_caixa_entrada": 0,
+                            "busca": 0,
+                            "monitor": 0,
+                            "nao_monitor": 0,
+                            "documentos_ids": set()
+                        }
+
+                    if cliente_status == 1:
+                        clientes_dict[cliente_nome]["total_documentos"] += 1
+                        clientes_dict[cliente_nome]["documentos_ids"].add(norm_id_str)
+
+                        if stages == 1:
+                            clientes_dict[cliente_nome]["pre_envio"] += 1
+                        elif stages == 2:
+                            if associated_uns:
+                                clientes_dict[cliente_nome]["pos_envio_caixa_entrada"] += 1
+                            else:
+                                clientes_dict[cliente_nome]["pos_envio_sem_caixa_entrada"] += 1
+                        elif stages == 3:
+                            clientes_dict[cliente_nome]["busca"] += 1
+
+                        if from_monitor:
+                            clientes_dict[cliente_nome]["monitor"] += 1
+                        else:
+                            clientes_dict[cliente_nome]["nao_monitor"] += 1
+            else:
+                documentos_faltantes.append({
+                    "_id": norm_id_str,
+                    "title": normativo.get("title", "N/A"),
+                    "type": normativo.get("type", "N/A"),
+                    "subject": normativo.get("subject", "N/A"),
+                    "link": normativo.get("link", "N/A")
+                })
+
+    for cliente, dados in clientes_dict.items():
+        ids_faltantes = todos_ids_normativos - dados["documentos_ids"]
+        if ids_faltantes:
+            dados["documentos_faltantes"] = [
+                {"_id": doc_id} for doc_id in ids_faltantes
+            ]
+        else:
+            dados["documentos_faltantes"] = []
+
+    print("Verificação de normativos concluída.")
+    return clientes_dict, documentos_faltantes
+Conceitos e Justificativas
+Validação de Cliente: Caso o ID não seja fornecido, o script utiliza o nome do cliente para buscar o ID correspondente.
+
+Execução em Paralelo: A utilização de ThreadPoolExecutor acelera o processamento de normativos, permitindo que múltiplos normativos sejam processados simultaneamente.
+
+Estrutura de Dados do Cliente: Cada cliente possui contadores para estágios específicos, facilitando a categorização e análise dos normativos.
+
+Exemplo de Execução
+Entrada:
+python
+Copiar código
+normativos = [
+    {"_id": ObjectId("12345"), "title": "Normativo Exemplo 1"},
+    {"_id": ObjectId("67890"), "title": "Normativo Exemplo 2"}
+]
+cliente_nome = "Legalbot"
+Saída:
+python
+Copiar código
+{
+    "Legalbot": {
+        "total_documentos": 2,
+        "pre_envio": 1,
+        "pos_envio_caixa_entrada": 0,
+        "pos_envio_sem_caixa_entrada": 1,
+        "busca": 0,
+        "monitor": 1,
+        "nao_monitor": 0,
+        "documentos_faltantes": []
+    }
+},
+[]
+Pontos Técnicos Importantes
+Dependências:
+
+Conexão com as coleções MongoDB: coll_normative_un, coll_un.
+Identificação de cliente e normativos associados.
+Segurança:
+
+Sanitização dos dados de entrada para evitar falhas nas consultas.
+Escalabilidade:
+
+O uso de execução paralela suporta grandes volumes de normativos.
+Sugestões para Futuras Melhorias
+Logs Detalhados: Implementar logs mais detalhados para rastrear erros e comportamento do sistema.
+
+Manutenção de Estados: Adicionar cache para reduzir consultas repetitivas ao banco.
+
+Configuração Dinâmica de Stages: Permitir que os estágios sejam configuráveis por cliente ou sistema.
+
+
+----------------------------
+
+
+
+Segue a documentação detalhada para o arquivo verificar_taxonomia.py:
+
+Documentação: verificar_taxonomia.py
+Descrição Geral
+O arquivo verificar_taxonomia.py é responsável por validar se um normativo específico possui uma taxonomia associada. Essa validação ocorre utilizando as coleções MongoDB relevantes, verificando a associação de regras e taxonomias ao normativo.
+
+Objetivo
+Verificar se o normativo possui uma taxonomia associada.
+Identificar se a taxonomia está associada ao cliente específico ou se é uma regra geral.
+Retornar informações detalhadas sobre a taxonomia e sua associação.
+Fluxo Lógico
+Busca do Normativo:
+
+Utiliza o ID do normativo para buscar informações na base.
+Validação de Taxonomia:
+
+Verifica a associação do normativo em routing_rule para regras específicas.
+Caso não encontre, marca como "Sem taxonomia associada".
+Retorno:
+
+Gera um dicionário contendo as informações da taxonomia, descrição, e associação ao cliente.
+Trechos de Código e Funções Importantes
+Função Principal: verificar_taxonomia
+python
+Copiar código
+from bson import ObjectId
+from config import coll_routing_rule, coll_norm
+
+def verificar_taxonomia(normativo_id):
+    """
+    Verifica a associação de taxonomia de um normativo específico.
+
+    Args:
+        normativo_id (str): ID do normativo.
+
+    Returns:
+        list: Lista contendo informações das taxonomias associadas ao normativo.
+    """
+    taxonomias = []
+
+    # Busca o normativo na coleção `coll_norm`
+    normativo = coll_norm.find_one({"_id": ObjectId(normativo_id)})
+    if not normativo:
+        return [{"normativo_id": normativo_id, "taxonomia": "Nenhuma", "descricao": "Normativo não encontrado", "associado_ao_cliente": False}]
+    
+    # Busca as regras associadas ao normativo na coleção `routing_rule`
+    regras = coll_routing_rule.find({"source_ids": {"$in": [ObjectId(normativo_id)]}})
+    if regras.count() == 0:
+        return [{"normativo_id": normativo_id, "taxonomia": "Nenhuma", "descricao": "Sem taxonomia associada", "associado_ao_cliente": False}]
+
+    # Itera pelas regras para coletar as taxonomias associadas
+    for regra in regras:
+        titulo = regra.get("title", "Sem título")
+        descricao = regra.get("subject", "Sem descrição")
+        associado_ao_cliente = regra.get("company_id") is not None
+
+        taxonomias.append({
+            "normativo_id": normativo_id,
+            "taxonomia": titulo,
+            "descricao": descricao,
+            "associado_ao_cliente": associado_ao_cliente
+        })
+
+    return taxonomias
+Conceitos e Justificativas
+Coleção routing_rule: Armazena regras de taxonomia associadas a normativos. Cada regra define condições para a aplicação da taxonomia.
+
+Associação ao Cliente: Caso o campo company_id esteja presente na regra, ela é específica para um cliente. Caso contrário, é uma regra geral.
+
+Falha na Associação: Se o normativo não estiver em nenhuma regra, é marcado como "Sem taxonomia associada".
+
+Exemplo de Execução
+Entrada:
+
+python
+Copiar código
+normativo_id = "6731f56a1b7d4a9216c9caa6"
+Saída:
+
+python
+Copiar código
+[
+    {
+        "normativo_id": "6731f56a1b7d4a9216c9caa6",
+        "taxonomia": "Cadastro Positivo",
+        "descricao": "Esta regra baseada em somente tema para cadastro positivo.",
+        "associado_ao_cliente": True
+    },
+    {
+        "normativo_id": "6731f56a1b7d4a9216c9caa6",
+        "taxonomia": "Normas Gerais",
+        "descricao": "Aplicação de regras gerais de cadastro.",
+        "associado_ao_cliente": False
+    }
+]
+Caso Sem Taxonomia Associada:
+
+python
+Copiar código
+[
+    {
+        "normativo_id": "6731f56a1b7d4a9216c9caa6",
+        "taxonomia": "Nenhuma",
+        "descricao": "Sem taxonomia associada",
+        "associado_ao_cliente": False
+    }
+]
+Pontos Técnicos Importantes
+Validação Inicial: Caso o normativo não seja encontrado na coleção coll_norm, retorna imediatamente um resultado de erro.
+
+Verificação em routing_rule: Busca regras associadas ao normativo. Se nenhuma regra for encontrada, retorna "Sem taxonomia associada".
+
+Estrutura do Retorno: Gera uma lista com informações detalhadas sobre cada taxonomia encontrada.
+
+Sugestões para Melhorias Futuras
+Logs de Verificação: Adicionar logs para rastrear as operações e auxiliar na depuração.
+
+Melhoria de Desempenho: Caso o volume de dados aumente, usar índices específicos no MongoDB para melhorar a consulta.
+
+Integração de Cache: Implementar cache para reduzir chamadas repetitivas ao banco.
+
+
+--------------------------------
+
+
+Documentação: verificar_monitoramento.py
+Descrição Geral
+O arquivo verificar_monitoramento.py é responsável por validar se normativos estão sendo capturados corretamente pelos monitores criados para um cliente específico. Ele verifica se as regras de monitoramento (baseadas em origem, tags positivas e negativas, e outras condições) estão sendo aplicadas corretamente.
+
+Objetivo
+Verificar a aplicação de regras de monitoramento associadas a um cliente.
+Identificar se os normativos deveriam ter sido capturados ou não.
+Detalhar o motivo de captura ou ausência de captura, com base nas regras do monitor.
+Fluxo Lógico
+Busca de Monitores:
+
+Retorna todos os monitores associados ao cliente (identificados pelo un_root).
+Validação de Normativos:
+
+Itera pelos normativos fornecidos.
+Para cada normativo, verifica se ele atende às condições de um ou mais monitores:
+Origens Monitoradas: Verifica se a origem do normativo está listada.
+Tags Positivas e Negativas: Confere se as tags no texto do normativo estão em conformidade com as regras (positivas = devem estar presentes; negativas = não podem estar presentes).
+Geração de Relatório:
+
+Para cada normativo, gera um relatório detalhado contendo:
+Informações do normativo.
+Regras do monitor.
+Resultado da verificação.
+Armazenamento:
+
+Salva o relatório final em um arquivo JSON.
+Trechos de Código e Funções Importantes
+Função: buscar_monitores
+python
+Copiar código
+def buscar_monitores(cliente_id):
+    """
+    Retorna todos os monitores criados para um cliente específico.
+
+    Args:
+        cliente_id (str): ID do cliente.
+
+    Returns:
+        list: Lista de monitores associados ao cliente.
+    """
+    monitores = list(coll_monitor.find({"un_root": ObjectId(cliente_id)}))
+    log_detalhado(f"[INFO] Monitores encontrados para cliente {cliente_id}: {len(monitores)}")
+    return monitores
+Descrição: Busca na coleção monitor todos os monitores associados ao cliente (un_root).
+Função: contar_ocorrencias_tags
+python
+Copiar código
+def contar_ocorrencias_tags(texto, tags):
+    """
+    Conta as ocorrências de cada tag em um texto e retorna um dicionário com os resultados.
+
+    Args:
+        texto (str): Texto a ser analisado.
+        tags (list): Lista de tags a serem verificadas.
+
+    Returns:
+        dict: Dicionário com as tags e suas ocorrências.
+    """
+    ocorrencias = Counter()
+    for tag in tags:
+        if isinstance(tag, str):
+            ocorrencias[tag] = texto.count(tag.lower())
+    log_detalhado(f"[INFO] Ocorrências de tags encontradas: {dict(ocorrencias)}")
+    return ocorrencias
+Descrição: Conta quantas vezes cada tag aparece no texto do normativo.
+Função: verificar_documento_por_monitor
+python
+Copiar código
+def verificar_documento_por_monitor(documento, monitor):
+    """
+    Verifica se o documento atende aos critérios de um monitor específico.
+
+    Args:
+        documento (dict): Dados do normativo.
+        monitor (dict): Dados do monitor.
+
+    Returns:
+        dict: Resultado detalhado da verificação.
+    """
+    texto = documento.get("text", "").lower()
+    filtros = monitor.get("filters", [])
+    log_detalhado(f"[INFO] Verificando documento ID {documento.get('_id')} no monitor ID {monitor.get('_id')}")
+
+    for filtro in filtros:
+        origens_monitoradas = filtro.get("origin", [])
+        if origens_monitoradas and documento.get("origin") not in origens_monitoradas:
+            return {
+                "captura_esperada": False,
+                "motivo": "Origem do documento não corresponde às origens monitoradas"
+            }
+
+        tags_positivas = [tag for grupo in filtro.get("tag_positive", []) for tag in grupo.get("value", [])]
+        tags_negativas = [tag for grupo in filtro.get("tag_negative", []) for tag in grupo.get("value", [])]
+
+        ocorrencias_positivas = contar_ocorrencias_tags(texto, tags_positivas)
+        ocorrencias_negativas = contar_ocorrencias_tags(texto, tags_negativas)
+
+        captura_esperada = any(ocorrencias_positivas.values()) and not any(ocorrencias_negativas.values())
+        motivo = []
+        if not captura_esperada:
+            if not any(ocorrencias_positivas.values()):
+                motivo.append("Nenhuma tag positiva obrigatória encontrada.")
+            if any(ocorrencias_negativas.values()):
+                motivo.append("Tags negativas encontradas.")
+
+        return {
+            "captura_esperada": captura_esperada,
+            "ocorrencias_positivas": dict(ocorrencias_positivas),
+            "ocorrencias_negativas": dict(ocorrencias_negativas),
+            "motivo": motivo
+        }
+Descrição: Avalia se o documento atende às condições do monitor.
+Valida origem.
+Analisa tags positivas e negativas no texto.
+Função: verificar_monitoramento
+python
+Copiar código
+def verificar_monitoramento(cliente_id, origem, data_inicial, data_final, documentos_faltantes):
+    """
+    Verifica se normativos faltantes atendem às condições dos monitores.
+
+    Args:
+        cliente_id (str): ID do cliente.
+        origem (str): Origem dos normativos.
+        data_inicial (str): Data inicial.
+        data_final (str): Data final.
+        documentos_faltantes (list): Lista de normativos faltantes.
+
+    Returns:
+        None
+    """
+    monitores = buscar_monitores(cliente_id)
+    relatorio = []
+
+    for doc in documentos_faltantes:
+        documento = coll_norm.find_one({"_id": ObjectId(doc["_id"])})
+        if documento and documento.get("origin") == origem:
+            doc_resultado = {"documento_id": doc["_id"], "title": doc.get("title"), "motivos": []}
+            for monitor in monitores:
+                resultado_monitor = verificar_documento_por_monitor(documento, monitor)
+                doc_resultado["motivos"].append(resultado_monitor)
+            relatorio.append(doc_resultado)
+
+    with open(f"relatorio_monitoramento_{cliente_id}.json", "w") as f:
+        json.dump(relatorio, f, indent=4, ensure_ascii=False)
+Descrição: Realiza a validação dos normativos contra os monitores.
+Coleta dados detalhados para cada monitor.
+Salva um relatório JSON com o resultado.
+Conceitos e Justificativas
+Coleção monitor: Contém as configurações de monitoramento associadas ao cliente.
+
+Tags Positivas e Negativas: Determinam a inclusão ou exclusão de normativos com base no texto.
+
+Origem: Filtro primário que valida a relevância do monitor para o normativo.
+
+Exemplo de Saída
+JSON Gerado:
+json
+Copiar código
+[
+    {
+        "documento_id": "6731f56a1b7d4a9216c9caa6",
+        "title": "Comunicado N° 42.394",
+        "motivos": [
+            {
+                "captura_esperada": false,
+                "ocorrencias_positivas": {"compliance": 0},
+                "ocorrencias_negativas": {"edital": 1},
+                "motivo": ["Tags negativas encontradas."]
+            }
+        ]
+    }
+]
+Sugestões de Melhorias
+Relatório Detalhado: Adicionar mais metadados sobre os normativos e monitores no relatório.
+
+Performance: Paralelizar a validação para grande volume de normativos.
+
+Integração de Logs: Implementar logs para rastrear etapas críticas do processo.
+
+
+------------------------------------
+
+
+Documentação: exibir_relatorio.py
+Descrição Geral
+O arquivo exibir_relatorio.py é responsável por exibir um relatório consolidado no terminal, detalhando informações dos normativos processados e as associações de taxonomia para cada cliente.
+
+Objetivo
+Exibir os resultados da análise e validação de normativos e suas associações de taxonomia.
+Apresentar um resumo de documentos faltantes e as razões para a ausência de captura.
+Garantir que as informações sejam exibidas de forma organizada e compreensível.
+Fluxo Lógico
+Recebe o dicionário de clientes e os documentos faltantes.
+Itera sobre cada cliente e exibe:
+Contagem de documentos em diferentes estágios (Pré-Envio, Pós-Envio, Monitor, etc.).
+Informações detalhadas sobre normativos associados e suas taxonomias.
+Exibe os documentos faltantes gerais.
+Garante que as informações duplicadas sejam filtradas para exibição única.
+Trechos de Código e Funções Importantes
+Função Principal: exibir_relatorio
+python
+Copiar código
+def exibir_relatorio(clientes_dict, documentos_faltantes):
+    """
+    Exibe o relatório com detalhes de todos os clientes e documentos faltantes,
+    incluindo taxonomias associadas.
+    
+    Args:
+        clientes_dict (dict): Dados dos clientes e seus normativos processados.
+        documentos_faltantes (list): Lista de normativos faltantes.
+    """
+    print("\n===== Relatório de Normativos e Clientes =====")
+    for cliente, dados in clientes_dict.items():
+        print(f"\nCliente: {cliente}")
+        print(f"Quantidade de documentos: {dados['total_documentos']}")
+        print(f"Quantidade de documentos no Pré-Envio: {dados['pre_envio']}")
+        print(f"Quantidade de documentos no Pós-Envio (Caixa de Entrada): {dados['pos_envio_caixa_entrada']}")
+        print(f"Quantidade de documentos no Pós-Envio (Sem Caixa de Entrada): {dados['pos_envio_sem_caixa_entrada']}")
+        print(f"Quantidade de documentos na Busca: {dados['busca']}")
+        print(f"Quantidade de documentos que vieram do Monitor: {dados['monitor']}")
+        print(f"Quantidade de documentos que não vieram do Monitor: {dados['nao_monitor']}")
+
+        # Verificar documentos faltantes específicos do cliente
+        if dados["documentos_faltantes"]:
+            print("\nDocumentos faltantes para este cliente:")
+            for doc in dados["documentos_faltantes"]:
+                print(f"ID: {doc['_id']}")
+        else:
+            print("Nenhum documento faltante para este cliente.")
+
+        # Exibir informações de taxonomias associadas
+        if "taxonomias_associadas" in dados and dados["taxonomias_associadas"]:
+            print("\nTaxonomias Associadas para os Normativos deste Cliente:")
+            unique_taxonomies = set()
+            for taxonomia in dados["taxonomias_associadas"]:
+                tax_key = (taxonomia["normativo_id"], taxonomia["taxonomia"], taxonomia["descricao"], taxonomia["associado_ao_cliente"])
+                if tax_key not in unique_taxonomies:  # Evitar duplicidade
+                    unique_taxonomies.add(tax_key)
+                    print(f"Normativo ID: {taxonomia['normativo_id']}")
+                    print(f"  - Taxonomia: {taxonomia['taxonomia']}")
+                    print(f"  - Descrição: {taxonomia['descricao']}")
+                    print(f"  - Associado ao Cliente: {'Sim' if taxonomia['associado_ao_cliente'] else 'Não'}")
+        else:
+            print("Nenhuma taxonomia associada para os normativos deste cliente.")
+
+        print("-----")
+
+    # Exibição de documentos faltantes gerais
+    if documentos_faltantes:
+        print("\n===== Documentos Faltantes Gerais =====")
+        for doc in documentos_faltantes:
+            print(f"ID: {doc['_id']}, Título: {doc['title']}, Tipo: {doc['type']}, Assunto: {doc['subject']}, Link: {doc['link']}")
+        print("===== Fim dos Documentos Faltantes =====")
+    else:
+        print("Nenhum documento faltante.")
+    
+    print("===== Fim do Relatório =====")
+Conceitos e Justificativas
+Clientes e Normativos:
+
+Os dados de cada cliente incluem informações consolidadas sobre os documentos associados.
+A contagem de documentos em diferentes estágios é importante para análise do fluxo.
+Taxonomias Associadas:
+
+Detalha as taxonomias aplicadas aos normativos, indicando se estão associadas ao cliente.
+Documentos Faltantes:
+
+Lista documentos que não foram encontrados ou não atendem aos critérios de monitoramento/taxonomia.
+Filtragem de Duplicatas:
+
+Garante que as mesmas informações não sejam exibidas mais de uma vez.
+Exemplo de Saída
+plaintext
+Copiar código
+===== Relatório de Normativos e Clientes =====
+
+Cliente: SF3
+Quantidade de documentos: 7
+Quantidade de documentos no Pré-Envio: 0
+Quantidade de documentos no Pós-Envio (Caixa de Entrada): 0
+Quantidade de documentos no Pós-Envio (Sem Caixa de Entrada): 7
+Quantidade de documentos na Busca: 0
+Quantidade de documentos que vieram do Monitor: 7
+Quantidade de documentos que não vieram do Monitor: 0
+
+Documentos faltantes para este cliente:
+ID: 6731f56a1b7d4a9216c9caa6
+
+Taxonomias Associadas para os Normativos deste Cliente:
+Normativo ID: 6731f56a1b7d4a9216c9caa6
+  - Taxonomia: Nenhuma
+  - Descrição: Sem taxonomia associada
+  - Associado ao Cliente: Não
+-----
+
+===== Documentos Faltantes Gerais =====
+ID: 6731f56a1b7d4a9216c9caa6, Título: Comunicado N° 42.394, Tipo: N/A, Assunto: Divulga a Taxa Básica Financeira (TBF), o Redutor "R" e a Taxa Referencial (TR), Link: https://www.bcb.gov.br
+===== Fim dos Documentos Faltantes =====
+
+===== Fim do Relatório =====
+Sugestões de Melhorias
+Formato de Saída Opcional:
+
+Adicionar a opção de salvar o relatório em arquivo JSON ou Excel.
+Resumo Geral:
+
+Incluir uma seção de resumo com totais de documentos por estágio e status.
+Integração com Logs:
+
+Exibir mensagens de log em tempo real durante a geração do relatório.
+
+
+
+------------------------------
+
+
+Documentação: config.py
+Descrição Geral
+O arquivo config.py gerencia a configuração central do projeto, incluindo a conexão com o banco de dados MongoDB e quaisquer outras configurações globais necessárias para o funcionamento do sistema.
+
+Objetivo
+Centralizar as configurações do banco de dados.
+Facilitar o gerenciamento de conexões com MongoDB.
+Permitir a adição de novas coleções ou configurações sem a necessidade de alterar vários arquivos.
+Estrutura do Arquivo
+Conexão com o Banco de Dados:
+
+Configura a URI do MongoDB utilizando variáveis de ambiente para segurança.
+Conecta-se ao banco de dados especificado.
+Definição das Coleções:
+
+Declara coleções utilizadas no projeto, garantindo acesso centralizado.
+Trechos de Código e Funções Importantes
+Importação e Configuração Inicial
+python
+Copiar código
+import os
+from pymongo import MongoClient
+from dotenv import load_dotenv
+
+# Carregar as variáveis de ambiente do arquivo .env
+load_dotenv()
+
+# URI do MongoDB
+MONGO_URI = os.getenv("MONGO_URI")
+
+# Nome do banco de dados
+DB_NAME = os.getenv("DB_NAME")
+Variáveis de Ambiente:
+MONGO_URI: URL de conexão segura ao MongoDB.
+DB_NAME: Nome do banco de dados que será acessado.
+Conexão com o MongoDB
+python
+Copiar código
+# Conexão com o MongoDB
+client = MongoClient(MONGO_URI)
+db = client[DB_NAME]
+MongoClient: Cria a conexão com o banco de dados utilizando a URI fornecida.
+db: Objeto de acesso ao banco de dados especificado.
+Definição das Coleções
+python
+Copiar código
+# Definição das coleções utilizadas
+coll_normative_un = db["normative_un"]
+coll_norm = db["norm"]
+coll_un = db["un"]
+coll_monitor = db["monitor"]
+coll_routing_rule = db["routing_rule"]
+Cada coleção é representada por uma variável que facilita o acesso nos scripts principais:
+coll_normative_un: Dados relacionados aos normativos e suas associações.
+coll_norm: Informações detalhadas dos normativos.
+coll_un: Informações sobre os clientes.
+coll_monitor: Configuração de monitoramento.
+coll_routing_rule: Configuração de regras de taxonomia.
+Conceitos e Justificativas
+Centralização de Configurações:
+
+Facilita a manutenção e evita duplicidade de definições.
+Permite mudanças rápidas na configuração sem alterar múltiplos arquivos.
+Segurança:
+
+Utiliza o dotenv para carregar variáveis de ambiente, evitando exposição de credenciais no código.
+Escalabilidade:
+
+Novas coleções podem ser adicionadas facilmente ao arquivo.
+Exemplo de Uso
+Qualquer script que necessite de acesso a uma coleção pode importar o config.py:
+python
+Copiar código
+from config import coll_normative_un, coll_norm
+
+# Consulta de exemplo na coleção normative_un
+normative_data = coll_normative_un.find_one({"_id": "example_id"})
+
+# Consulta de exemplo na coleção norm
+norm_details = coll_norm.find_one({"_id": "another_example_id"})
+Sugestões de Melhorias
+Validação de Conexão:
+
+Implementar verificações para garantir que a conexão com o banco está ativa antes de realizar operações.
+Pooling de Conexões:
+
+Configurar um pool de conexões para melhorar a eficiência em aplicações de alta concorrência.
+Documentação das Coleções:
+
+Adicionar comentários sobre o propósito de cada coleção para facilitar o entendimento por novos desenvolvedores.
+
+
+
+----------------------------
+
+
+Documentação: .env
+Descrição Geral
+O arquivo .env contém variáveis de ambiente que são utilizadas para configurar aspectos críticos do sistema, como a conexão ao banco de dados MongoDB. Este arquivo é essencial para manter credenciais e informações sensíveis fora do código-fonte, garantindo maior segurança e flexibilidade.
+
+Objetivo
+Armazenar configurações sensíveis de forma segura.
+Facilitar a manutenção e configuração do ambiente de desenvolvimento e produção.
+Evitar que informações confidenciais sejam incluídas no controle de versão (como Git).
+Estrutura do Arquivo
+O arquivo .env segue um formato de chave-valor, onde cada linha representa uma variável de ambiente.
+
+Exemplo de Configuração do .env
+plaintext
+Copiar código
+# Configuração do MongoDB
+MONGO_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net
+DB_NAME=nome_do_banco
+
+# Outras configurações (se aplicável)
+LOG_LEVEL=INFO
+API_KEY=seu_token_de_api
+Explicação dos Campos
+MONGO_URI:
+
+Contém a URI de conexão ao banco de dados MongoDB.
+Inclui informações como usuário, senha, e endereço do cluster.
+DB_NAME:
+
+Nome do banco de dados que será utilizado no sistema.
+LOG_LEVEL (opcional):
+
+Define o nível de log do sistema (ex.: DEBUG, INFO, WARNING, ERROR, CRITICAL).
+Útil para depuração em ambientes de desenvolvimento e produção.
+API_KEY (opcional):
+
+Exemplo de chave para autenticação em APIs externas.
+Adicionar apenas se necessário.
+Conceitos e Justificativas
+Separação de Configuração e Código:
+
+Evita a inclusão de credenciais no código-fonte.
+Permite que configurações sensíveis sejam alteradas sem modificar o código.
+Portabilidade:
+
+Facilita a configuração do sistema em diferentes ambientes (desenvolvimento, testes, produção).
+Segurança:
+
+Arquivo .env geralmente é ignorado no controle de versão (.gitignore), protegendo informações sensíveis.
+Sugestões de Uso
+Carregando o .env no Python: O arquivo .env é carregado automaticamente pelo módulo dotenv no projeto:
+
+python
+Copiar código
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+# Acessando as variáveis
+mongo_uri = os.getenv("MONGO_URI")
+db_name = os.getenv("DB_NAME")
+Adicionando ao .gitignore: Garanta que o arquivo .env não seja enviado para repositórios públicos:
+
+plaintext
+Copiar código
+# .gitignore
+.env
+Sugestões de Melhorias
+Organização:
+
+Inclua comentários explicando cada variável no .env para facilitar o entendimento por novos desenvolvedores.
+Validação:
+
+Crie uma função para validar a presença das variáveis obrigatórias antes de executar o sistema.
+Alternativas para Produção:
+
+Em ambientes de produção, considere o uso de gerenciadores de segredo, como AWS Secrets Manager ou Azure Key Vault.
