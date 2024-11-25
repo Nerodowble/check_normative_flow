@@ -1410,7 +1410,7 @@
         }
     },
     "6453e226cc18ab8005e7ecb8": {
-        "last_updated": "2024-11-21T13:25:12.381386+00:00",
+        "last_updated": "2024-11-25T17:15:34.342183+00:00",
         "data": {
             "nome_cliente": "SF3",
             "status": "Ativo",
@@ -1421,12 +1421,38 @@
                 "search.platform.legalbot.com.br"
             ],
             "origens_configuradas": [],
+            "origens_associadas": [
+                "BACEN/DOU",
+                "Minist\u00e9rio da Pesca e Aquicultura/DOU",
+                "BACEN",
+                "DF/DO",
+                "CMN/DOU",
+                "Gabinete-MCID/DOU",
+                "SP/DOE",
+                "ANBIMA",
+                "Rio de Janeiro-RJ/DOM",
+                "ME/DOU",
+                "CE/DOE"
+            ],
+            "areas_associadas": [
+                "ID: 6453e39ccc18ab8005e7ecb9 - Nome: SF3 | Compliance",
+                "ID: 6499ed460429e312c8c4ade2 - Nome: SF3 | Contabilidade",
+                "ID: 649ae88435c09713fd424975 - Nome: SF3 |T.I TECNOLOGIA",
+                "ID: 649ae8c835c09713fd424976 - Nome: SF3 |Tesouraria",
+                "ID: 649ae90cb8b6b7b7d690f784 - Nome: SF3 | RH- Recursos Humanos",
+                "ID: 649ae94435c09713fd424977 - Nome: SF3 | Controladoria",
+                "ID: 649ae99fb8b6b7b7d690f785 - Nome: SF3 |Financeiro/Tesouraria",
+                "ID: 649ae9c635c09713fd424978 - Nome: SF3 |Risco de Cr\u00e9dito",
+                "ID: 649aea2435c09713fd424979 - Nome: SF3 |T.I Tecnologia",
+                "ID: 649aea91b8b6b7b7d690f786 - Nome: SF3 |Contas a Pagar",
+                "ID: 64ca5d674b4935e0dc4faa99 - Nome: SF3 - Brasil | Ouvidoria"
+            ],
             "contabilidade_normativos": {
                 "12_meses": {
-                    "total": 2997,
+                    "total": 2975,
                     "por_base": {
-                        "BACEN": 1629,
-                        "BACEN/DOU": 1368
+                        "BACEN/DOU": 1362,
+                        "BACEN": 1613
                     }
                 },
                 "6_meses": {
@@ -1437,10 +1463,10 @@
                     }
                 },
                 "3_meses": {
-                    "total": 823,
+                    "total": 821,
                     "por_base": {
-                        "BACEN": 447,
-                        "BACEN/DOU": 376
+                        "BACEN": 450,
+                        "BACEN/DOU": 371
                     }
                 }
             }
