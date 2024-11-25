@@ -35,19 +35,16 @@ PRODUCTS_DESCRIPTIONS = {
 }
 
 def carregar_cache():
-    """Carrega os dados do cache do arquivo JSON."""
     if os.path.exists(CACHE_FILE):
         with open(CACHE_FILE, "r") as f:
             return json.load(f)
     return {}
 
 def salvar_cache(cache):
-    """Salva os dados no cache para o arquivo JSON."""
     with open(CACHE_FILE, "w") as f:
         json.dump(serialize_object_ids(cache), f, indent=4)
 
 def serialize_object_ids(data):
-    """Converte todos os ObjectIds em strings dentro de uma estrutura de dados."""
     if isinstance(data, dict):
         return {key: serialize_object_ids(value) for key, value in data.items()}
     elif isinstance(data, list):
@@ -58,11 +55,9 @@ def serialize_object_ids(data):
         return data
 
 def obter_un(cliente_id):
-    """Obtém os dados da UN (cliente) com base no ID fornecido."""
     return db.un.find_one({"_id": ObjectId(cliente_id)})
 
 def obter_nome_origens(origens_ids):
-    """Obtém os nomes das origens a partir de seus IDs."""
     origens_detalhadas = []
     for origem_id in origens_ids:
         origem_data = db.origins.find_one({"_id": ObjectId(origem_id)})
@@ -79,33 +74,53 @@ def obter_nome_origens(origens_ids):
     return origens_detalhadas
 
 def verificar_origens_configuradas(cliente_id):
-    """Verifica se há origens configuradas diretamente no cliente na collection un_config."""
     config = db.un_config.find_one({"un_id": ObjectId(cliente_id)})
     origens_ids = config.get("acquired_origins", []) if config else []
-    origens_detalhadas = obter_nome_origens(origens_ids)
-    return origens_detalhadas
+    return obter_nome_origens(origens_ids)
+
+def obter_origens_associadas_via_radar(cliente_id):
+    pipeline = [
+        {"$match": {"un_root": ObjectId(cliente_id)}},
+        {"$group": {"_id": "$norm_infos.origin"}}
+    ]
+    resultados = list(db.normative_un.aggregate(pipeline))
+    return [res["_id"] for res in resultados if res["_id"]]
+
+def obter_areas_associadas(cliente_id):
+    cliente_data = obter_un(cliente_id)
+    areas_ids = cliente_data.get("children", []) if cliente_data else []
+    areas_detalhadas = []
+    for area_id in areas_ids:
+        area_data = db.un.find_one({"_id": ObjectId(area_id)})
+        if area_data:
+            areas_detalhadas.append({
+                "id": str(area_id),
+                "nome": area_data.get("name", "Nome Desconhecido")
+            })
+        else:
+            areas_detalhadas.append({
+                "id": str(area_id),
+                "nome": "Área não encontrada"
+            })
+    return areas_detalhadas
 
 def calcular_normativos(cliente_id, meses):
-    """Calcula a quantidade de normativos nos últimos `meses` e retorna o total e por base."""
     data_limite = datetime.now(timezone.utc) - timedelta(days=30 * meses)
     pipeline = [
         {"$match": {"un_root": ObjectId(cliente_id), "created_at": {"$gte": data_limite}}},
         {"$group": {"_id": "$norm_infos.origin", "count": {"$sum": 1}}}
     ]
     resultados = list(db.normative_un.aggregate(pipeline))
-
     total_normativos = sum(item["count"] for item in resultados)
     normativos_por_base = {item["_id"]: item["count"] for item in resultados}
     return total_normativos, normativos_por_base
 
 def gerar_relatorio(cliente_id):
-    """Gera o relatório de produtos associados ao cliente e normativos."""
-    # Carregar cache
     cache = carregar_cache()
     if cliente_id in cache:
         cache_data = cache[cliente_id]
         last_updated = datetime.fromisoformat(cache_data["last_updated"])
-        if (datetime.now(timezone.utc) - last_updated).total_seconds() < 86400:  # Cache válido por 24 horas
+        if (datetime.now(timezone.utc) - last_updated).total_seconds() < 86400:
             print("\n===== Dados do Cache =====")
             print(json.dumps(cache_data, indent=4))
             print("\n===== Fim dos Dados do Cache =====")
@@ -117,6 +132,8 @@ def gerar_relatorio(cliente_id):
         return
 
     origens_configuradas = verificar_origens_configuradas(cliente_id)
+    origens_associadas = obter_origens_associadas_via_radar(cliente_id)
+    areas_associadas = obter_areas_associadas(cliente_id)
 
     relatorio = {
         "nome_cliente": cliente_data.get("name", "Desconhecido"),
@@ -125,6 +142,10 @@ def gerar_relatorio(cliente_id):
         "produtos": cliente_data.get("products", []),
         "origens_configuradas": [
             f"ID: {origem['id']} - Nome: {origem['nome']}" for origem in origens_configuradas
+        ],
+        "origens_associadas": origens_associadas,
+        "areas_associadas": [
+            f"ID: {area['id']} - Nome: {area['nome']}" for area in areas_associadas
         ],
         "contabilidade_normativos": {}
     }
@@ -136,10 +157,7 @@ def gerar_relatorio(cliente_id):
             "por_base": por_base
         }
 
-    # Serializar dados antes de salvar no cache
     relatorio_serialized = serialize_object_ids(relatorio)
-
-    # Salvar no cache
     cache[cliente_id] = {
         "last_updated": datetime.now(timezone.utc).isoformat(),
         "data": relatorio_serialized
@@ -150,11 +168,6 @@ def gerar_relatorio(cliente_id):
     print(json.dumps(relatorio_serialized, indent=4))
     print("\n===== Fim do Relatório =====")
 
-# Entrada do cliente para gerar o relatório
 if __name__ == "__main__":
     cliente_id = input("Informe o ID do cliente: ").strip()
     gerar_relatorio(cliente_id)
-
-#Ele tem as origens especificada para ele (no caso SF3 0)
-#Mas ele não esta informando as origens ASSOCIADAS, via RADAR por exemplo.
-#Tambem não está informando as ÁREAS, que constam na collection 'un'.

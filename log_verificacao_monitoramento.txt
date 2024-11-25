@@ -1,915 +1,697 @@
+[INFO] Iniciando verificação para cliente ID 6453e226cc18ab8005e7ecb8 entre 2024-11-14 e 2024-11-14 para origem BACEN
+[INFO] Monitores encontrados para cliente 6453e226cc18ab8005e7ecb8: 24
+[INFO] Documento encontrado com ID 6735e9ea16b60bc6050bd702: {'_id': ObjectId('6735e9ea16b60bc6050bd702'), 'origin': 'BACEN', 'source_oids': [ObjectId('613a98ca4396739de77a7cae')], 'norm_type': 'Comunicado', 'normalized_type': 'Comunicado', 'consolidated_type': 'Comunicados e Avisos', 'number': '42419', 'publish_date': datetime.datetime(2024, 11, 14, 3, 0), 'issuance_date': datetime.datetime(2024, 11, 14, 3, 0), 'title': 'Comunicado N° 42.419, 14/11/2024', 'subject': 'Divulga a Taxa Básica Financeira (TBF), o Redutor "R" e a Taxa Referencial (TR) relativos a 13 de novembro de 2024.', 'text': 'De acordo com o que determina a Resolução CMN nº 4.624, de 18.1.2018, comunicamos que a Taxa Básica Financeira (TBF), o Redutor "R" e a Taxa Referencial (TR) relativos ao período de 13.11.2024 a 13.12.2024 são, respectivamente: 0,7994% (sete mil, novecentos e noventa e quatro décimos de milésimo por cento), 1,00729044 (um inteiro e setecentos e vinte e nove mil e quarenta e quatro centésimos de milionésimos) e 0,0698% (seiscentos e noventa e oito décimos de milésimo por cento).\n\xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0Andre de Oliveira Amante\n\xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 Chefe do Departamento de Operações do Mercado Aberto', 'link': 'https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?tipo=Comunicado&numero=42419', 'act_date': datetime.datetime(2024, 11, 14, 0, 0), 'status': 2, 'section': '', 'status_document': 'Vigente', 'created_at': datetime.datetime(2024, 11, 14, 12, 17, 14, 672000), 'group': 'Política Monetária', 'theme': 'Taxa Básica Financeira', 'tags': ['redutor r', 'taxa básica financeira', 'taxa básica financeira tbf', 'taxa referencial', 'tbf', 'tr'], 'restricted': False, 'metadata': {'entities': [], 'norm_metadata': {}}, 'search_sync': datetime.datetime(2024, 11, 14, 12, 17, 14, 723000)}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 645a8ec7cecc1de8839266a1
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios.
+[INFO] Resultado para monitor 645a8ec7cecc1de8839266a1: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 645a9056cecc1de8839266a2
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios.
+[INFO] Resultado para monitor 645a9056cecc1de8839266a2: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 645a909a9dcad7cfc8a70a8e
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios.
+[INFO] Resultado para monitor 645a909a9dcad7cfc8a70a8e: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 645a96f29dcad7cfc8a70a8f
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios.
+[INFO] Resultado para monitor 645a96f29dcad7cfc8a70a8f: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647e42c68e2793241d7a7674
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios.
+[INFO] Resultado para monitor 647e42c68e2793241d7a7674: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f7f42f7c169a25b1caf00
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios.
+[INFO] Resultado para monitor 647f7f42f7c169a25b1caf00: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8400f7c169a25b1caf01
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios.
+[INFO] Resultado para monitor 647f8400f7c169a25b1caf01: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f84508e2793241d7a7675
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios.
+[INFO] Resultado para monitor 647f84508e2793241d7a7675: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f845ce69ea204db29a32c
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios.
+[INFO] Resultado para monitor 647f845ce69ea204db29a32c: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f84aaf7c169a25b1caf02
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios.
+[INFO] Resultado para monitor 647f84aaf7c169a25b1caf02: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f85ca8e2793241d7a7676
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios.
+[INFO] Resultado para monitor 647f85ca8e2793241d7a7676: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f861ff7c169a25b1caf03
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios.
+[INFO] Resultado para monitor 647f861ff7c169a25b1caf03: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f86e48e2793241d7a7677
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios.
+[INFO] Resultado para monitor 647f86e48e2793241d7a7677: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f87998e2793241d7a7678
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios.
+[INFO] Resultado para monitor 647f87998e2793241d7a7678: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8848f7c169a25b1caf04
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios.
+[INFO] Resultado para monitor 647f8848f7c169a25b1caf04: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f88918e2793241d7a7679
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios.
+[INFO] Resultado para monitor 647f88918e2793241d7a7679: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f89eff7c169a25b1caf05
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios.
+[INFO] Resultado para monitor 647f89eff7c169a25b1caf05: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8a33f7c169a25b1caf06
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios.
+[INFO] Resultado para monitor 647f8a33f7c169a25b1caf06: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8af28e2793241d7a767a
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios.
+[INFO] Resultado para monitor 647f8af28e2793241d7a767a: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8b7ce69ea204db29a32d
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios.
+[INFO] Resultado para monitor 647f8b7ce69ea204db29a32d: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8bc7e69ea204db29a32e
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios.
+[INFO] Resultado para monitor 647f8bc7e69ea204db29a32e: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 651ef0f2f4f946f8f1550133
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios.
+[INFO] Resultado para monitor 651ef0f2f4f946f8f1550133: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 65eb67b601a0620d218ae33b
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios.
+[INFO] Resultado para monitor 65eb67b601a0620d218ae33b: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 65eb67f701a0620d218ae33f
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios.
+[INFO] Resultado para monitor 65eb67f701a0620d218ae33f: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Relatório final salvo para cliente ID 6453e226cc18ab8005e7ecb8
+[INFO] Iniciando verificação para cliente ID 6453e226cc18ab8005e7ecb8 entre 2024-11-14 e 2024-11-14 para origem BACEN
+[INFO] Monitores encontrados para cliente 6453e226cc18ab8005e7ecb8: 24
+[INFO] Documento encontrado com ID 6735e9ea16b60bc6050bd702: {'_id': ObjectId('6735e9ea16b60bc6050bd702'), 'origin': 'BACEN', 'source_oids': [ObjectId('613a98ca4396739de77a7cae')], 'norm_type': 'Comunicado', 'normalized_type': 'Comunicado', 'consolidated_type': 'Comunicados e Avisos', 'number': '42419', 'publish_date': datetime.datetime(2024, 11, 14, 3, 0), 'issuance_date': datetime.datetime(2024, 11, 14, 3, 0), 'title': 'Comunicado N° 42.419, 14/11/2024', 'subject': 'Divulga a Taxa Básica Financeira (TBF), o Redutor "R" e a Taxa Referencial (TR) relativos a 13 de novembro de 2024.', 'text': 'De acordo com o que determina a Resolução CMN nº 4.624, de 18.1.2018, comunicamos que a Taxa Básica Financeira (TBF), o Redutor "R" e a Taxa Referencial (TR) relativos ao período de 13.11.2024 a 13.12.2024 são, respectivamente: 0,7994% (sete mil, novecentos e noventa e quatro décimos de milésimo por cento), 1,00729044 (um inteiro e setecentos e vinte e nove mil e quarenta e quatro centésimos de milionésimos) e 0,0698% (seiscentos e noventa e oito décimos de milésimo por cento).\n\xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0Andre de Oliveira Amante\n\xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 Chefe do Departamento de Operações do Mercado Aberto', 'link': 'https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?tipo=Comunicado&numero=42419', 'act_date': datetime.datetime(2024, 11, 14, 0, 0), 'status': 2, 'section': '', 'status_document': 'Vigente', 'created_at': datetime.datetime(2024, 11, 14, 12, 17, 14, 672000), 'group': 'Política Monetária', 'theme': 'Taxa Básica Financeira', 'tags': ['redutor r', 'taxa básica financeira', 'taxa básica financeira tbf', 'taxa referencial', 'tbf', 'tr'], 'restricted': False, 'metadata': {'entities': [], 'norm_metadata': {}}, 'search_sync': datetime.datetime(2024, 11, 14, 12, 17, 14, 723000)}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 645a8ec7cecc1de8839266a1
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 645a8ec7cecc1de8839266a1: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 645a9056cecc1de8839266a2
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 645a9056cecc1de8839266a2: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 645a909a9dcad7cfc8a70a8e
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 645a909a9dcad7cfc8a70a8e: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 645a96f29dcad7cfc8a70a8f
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 645a96f29dcad7cfc8a70a8f: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647e42c68e2793241d7a7674
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647e42c68e2793241d7a7674: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f7f42f7c169a25b1caf00
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f7f42f7c169a25b1caf00: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8400f7c169a25b1caf01
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f8400f7c169a25b1caf01: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f84508e2793241d7a7675
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f84508e2793241d7a7675: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f845ce69ea204db29a32c
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f845ce69ea204db29a32c: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f84aaf7c169a25b1caf02
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f84aaf7c169a25b1caf02: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f85ca8e2793241d7a7676
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f85ca8e2793241d7a7676: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f861ff7c169a25b1caf03
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f861ff7c169a25b1caf03: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f86e48e2793241d7a7677
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f86e48e2793241d7a7677: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f87998e2793241d7a7678
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f87998e2793241d7a7678: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8848f7c169a25b1caf04
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f8848f7c169a25b1caf04: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f88918e2793241d7a7679
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f88918e2793241d7a7679: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f89eff7c169a25b1caf05
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f89eff7c169a25b1caf05: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8a33f7c169a25b1caf06
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f8a33f7c169a25b1caf06: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8af28e2793241d7a767a
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f8af28e2793241d7a767a: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8b7ce69ea204db29a32d
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f8b7ce69ea204db29a32d: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8bc7e69ea204db29a32e
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f8bc7e69ea204db29a32e: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 651ef0f2f4f946f8f1550133
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 651ef0f2f4f946f8f1550133: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 65eb67b601a0620d218ae33b
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 65eb67b601a0620d218ae33b: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 65eb67f701a0620d218ae33f
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 65eb67f701a0620d218ae33f: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Relatório final salvo para cliente ID 6453e226cc18ab8005e7ecb8
+[INFO] Iniciando verificação para cliente ID 6453e226cc18ab8005e7ecb8 entre 2024-11-14 e 2024-11-14 para origem BACEN
+[INFO] Monitores encontrados para cliente 6453e226cc18ab8005e7ecb8: 24
+[INFO] Documento encontrado com ID 6735e9ea16b60bc6050bd702: {'_id': ObjectId('6735e9ea16b60bc6050bd702'), 'origin': 'BACEN', 'source_oids': [ObjectId('613a98ca4396739de77a7cae')], 'norm_type': 'Comunicado', 'normalized_type': 'Comunicado', 'consolidated_type': 'Comunicados e Avisos', 'number': '42419', 'publish_date': datetime.datetime(2024, 11, 14, 3, 0), 'issuance_date': datetime.datetime(2024, 11, 14, 3, 0), 'title': 'Comunicado N° 42.419, 14/11/2024', 'subject': 'Divulga a Taxa Básica Financeira (TBF), o Redutor "R" e a Taxa Referencial (TR) relativos a 13 de novembro de 2024.', 'text': 'De acordo com o que determina a Resolução CMN nº 4.624, de 18.1.2018, comunicamos que a Taxa Básica Financeira (TBF), o Redutor "R" e a Taxa Referencial (TR) relativos ao período de 13.11.2024 a 13.12.2024 são, respectivamente: 0,7994% (sete mil, novecentos e noventa e quatro décimos de milésimo por cento), 1,00729044 (um inteiro e setecentos e vinte e nove mil e quarenta e quatro centésimos de milionésimos) e 0,0698% (seiscentos e noventa e oito décimos de milésimo por cento).\n\xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0Andre de Oliveira Amante\n\xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 Chefe do Departamento de Operações do Mercado Aberto', 'link': 'https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?tipo=Comunicado&numero=42419', 'act_date': datetime.datetime(2024, 11, 14, 0, 0), 'status': 2, 'section': '', 'status_document': 'Vigente', 'created_at': datetime.datetime(2024, 11, 14, 12, 17, 14, 672000), 'group': 'Política Monetária', 'theme': 'Taxa Básica Financeira', 'tags': ['redutor r', 'taxa básica financeira', 'taxa básica financeira tbf', 'taxa referencial', 'tbf', 'tr'], 'restricted': False, 'metadata': {'entities': [], 'norm_metadata': {}}, 'search_sync': datetime.datetime(2024, 11, 14, 12, 17, 14, 723000)}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 645a8ec7cecc1de8839266a1
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 645a8ec7cecc1de8839266a1: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 645a9056cecc1de8839266a2
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 645a9056cecc1de8839266a2: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 645a909a9dcad7cfc8a70a8e
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 645a909a9dcad7cfc8a70a8e: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 645a96f29dcad7cfc8a70a8f
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 645a96f29dcad7cfc8a70a8f: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647e42c68e2793241d7a7674
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647e42c68e2793241d7a7674: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f7f42f7c169a25b1caf00
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f7f42f7c169a25b1caf00: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8400f7c169a25b1caf01
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f8400f7c169a25b1caf01: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f84508e2793241d7a7675
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f84508e2793241d7a7675: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f845ce69ea204db29a32c
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f845ce69ea204db29a32c: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f84aaf7c169a25b1caf02
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f84aaf7c169a25b1caf02: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f85ca8e2793241d7a7676
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f85ca8e2793241d7a7676: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f861ff7c169a25b1caf03
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f861ff7c169a25b1caf03: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f86e48e2793241d7a7677
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f86e48e2793241d7a7677: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f87998e2793241d7a7678
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f87998e2793241d7a7678: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8848f7c169a25b1caf04
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f8848f7c169a25b1caf04: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f88918e2793241d7a7679
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f88918e2793241d7a7679: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f89eff7c169a25b1caf05
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f89eff7c169a25b1caf05: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8a33f7c169a25b1caf06
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f8a33f7c169a25b1caf06: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8af28e2793241d7a767a
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f8af28e2793241d7a767a: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8b7ce69ea204db29a32d
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f8b7ce69ea204db29a32d: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8bc7e69ea204db29a32e
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f8bc7e69ea204db29a32e: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 651ef0f2f4f946f8f1550133
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 651ef0f2f4f946f8f1550133: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 65eb67b601a0620d218ae33b
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 65eb67b601a0620d218ae33b: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 65eb67f701a0620d218ae33f
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 65eb67f701a0620d218ae33f: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Relatório final salvo para cliente ID 6453e226cc18ab8005e7ecb8
+[INFO] Iniciando verificação para cliente ID 6453e226cc18ab8005e7ecb8 entre 2024-11-14 e 2024-11-14 para origem BACEN
+[INFO] Monitores encontrados para cliente 6453e226cc18ab8005e7ecb8: 24
+[INFO] Documento encontrado com ID 6735e9ea16b60bc6050bd702: {'_id': ObjectId('6735e9ea16b60bc6050bd702'), 'origin': 'BACEN', 'source_oids': [ObjectId('613a98ca4396739de77a7cae')], 'norm_type': 'Comunicado', 'normalized_type': 'Comunicado', 'consolidated_type': 'Comunicados e Avisos', 'number': '42419', 'publish_date': datetime.datetime(2024, 11, 14, 3, 0), 'issuance_date': datetime.datetime(2024, 11, 14, 3, 0), 'title': 'Comunicado N° 42.419, 14/11/2024', 'subject': 'Divulga a Taxa Básica Financeira (TBF), o Redutor "R" e a Taxa Referencial (TR) relativos a 13 de novembro de 2024.', 'text': 'De acordo com o que determina a Resolução CMN nº 4.624, de 18.1.2018, comunicamos que a Taxa Básica Financeira (TBF), o Redutor "R" e a Taxa Referencial (TR) relativos ao período de 13.11.2024 a 13.12.2024 são, respectivamente: 0,7994% (sete mil, novecentos e noventa e quatro décimos de milésimo por cento), 1,00729044 (um inteiro e setecentos e vinte e nove mil e quarenta e quatro centésimos de milionésimos) e 0,0698% (seiscentos e noventa e oito décimos de milésimo por cento).\n\xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0Andre de Oliveira Amante\n\xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 Chefe do Departamento de Operações do Mercado Aberto', 'link': 'https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?tipo=Comunicado&numero=42419', 'act_date': datetime.datetime(2024, 11, 14, 0, 0), 'status': 2, 'section': '', 'status_document': 'Vigente', 'created_at': datetime.datetime(2024, 11, 14, 12, 17, 14, 672000), 'group': 'Política Monetária', 'theme': 'Taxa Básica Financeira', 'tags': ['redutor r', 'taxa básica financeira', 'taxa básica financeira tbf', 'taxa referencial', 'tbf', 'tr'], 'restricted': False, 'metadata': {'entities': [], 'norm_metadata': {}}, 'search_sync': datetime.datetime(2024, 11, 14, 12, 17, 14, 723000)}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 645a8ec7cecc1de8839266a1
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 645a8ec7cecc1de8839266a1: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 645a9056cecc1de8839266a2
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 645a9056cecc1de8839266a2: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 645a909a9dcad7cfc8a70a8e
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 645a909a9dcad7cfc8a70a8e: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 645a96f29dcad7cfc8a70a8f
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 645a96f29dcad7cfc8a70a8f: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647e42c68e2793241d7a7674
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647e42c68e2793241d7a7674: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f7f42f7c169a25b1caf00
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f7f42f7c169a25b1caf00: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8400f7c169a25b1caf01
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f8400f7c169a25b1caf01: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f84508e2793241d7a7675
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f84508e2793241d7a7675: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f845ce69ea204db29a32c
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f845ce69ea204db29a32c: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f84aaf7c169a25b1caf02
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f84aaf7c169a25b1caf02: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f85ca8e2793241d7a7676
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f85ca8e2793241d7a7676: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f861ff7c169a25b1caf03
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f861ff7c169a25b1caf03: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f86e48e2793241d7a7677
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f86e48e2793241d7a7677: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f87998e2793241d7a7678
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f87998e2793241d7a7678: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8848f7c169a25b1caf04
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f8848f7c169a25b1caf04: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f88918e2793241d7a7679
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f88918e2793241d7a7679: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f89eff7c169a25b1caf05
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f89eff7c169a25b1caf05: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8a33f7c169a25b1caf06
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f8a33f7c169a25b1caf06: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8af28e2793241d7a767a
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f8af28e2793241d7a767a: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8b7ce69ea204db29a32d
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f8b7ce69ea204db29a32d: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8bc7e69ea204db29a32e
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f8bc7e69ea204db29a32e: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 651ef0f2f4f946f8f1550133
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 651ef0f2f4f946f8f1550133: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 65eb67b601a0620d218ae33b
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 65eb67b601a0620d218ae33b: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 65eb67f701a0620d218ae33f
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 65eb67f701a0620d218ae33f: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Relatório final salvo para cliente ID 6453e226cc18ab8005e7ecb8
 [INFO] Iniciando verificação para cliente ID 6453e226cc18ab8005e7ecb8 entre 2024-11-15 e 2024-11-15 para origem BACEN
-[INFO] Monitores encontrados para cliente 6453e226cc18ab8005e7ecb8: 28
+[INFO] Monitores encontrados para cliente 6453e226cc18ab8005e7ecb8: 24
+[INFO] Relatório final salvo para cliente ID 6453e226cc18ab8005e7ecb8
+[INFO] Iniciando verificação para cliente ID 6453e226cc18ab8005e7ecb8 entre 2024-11-18 e 2024-11-18 para origem BACEN
+[INFO] Monitores encontrados para cliente 6453e226cc18ab8005e7ecb8: 24
+[INFO] Documento encontrado com ID 673b2fe85eb95b6afc88660f: {'_id': ObjectId('673b2fe85eb95b6afc88660f'), 'origin': 'BACEN', 'source_oids': [ObjectId('613a98ca4396739de77a7cae')], 'norm_type': 'Comunicado', 'normalized_type': 'Comunicado', 'consolidated_type': 'Comunicados', 'number': '42427', 'publish_date': datetime.datetime(2024, 11, 18, 3, 0), 'issuance_date': datetime.datetime(2024, 11, 18, 3, 0), 'title': 'Comunicado N° 42.427, 18/11/2024', 'subject': 'Divulga a Taxa Básica Financeira (TBF), o Redutor "R" e a Taxa Referencial (TR) relativos a 14 de novembro de 2024.', 'text': 'De acordo com o que determina a Resolução CMN nº 4.624, de 18.1.2018, comunicamos que a Taxa Básica Financeira (TBF), o Redutor "R" e a Taxa Referencial (TR) relativos ao período de 14.11.2024 a 14.12.2024 são, respectivamente: 0,7996% (sete mil, novecentos e noventa e seis décimos de milésimo por cento), 1,00729224 (um inteiro e setecentos e vinte e nove mil, duzentos e vinte e quatro centésimos de milionésimos) e 0,0699% (seiscentos e noventa e nove décimos de milésimo por cento).\n\xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0Andre de Oliveira Amante\n\xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 Chefe do Departamento de Operações do Mercado Aberto', 'link': 'https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?tipo=Comunicado&numero=42427', 'act_date': datetime.datetime(2024, 11, 18, 0, 0), 'status': 2, 'section': '', 'status_document': 'Vigente', 'created_at': datetime.datetime(2024, 11, 18, 12, 17, 12, 664000), 'group': 'Política Monetária', 'theme': 'Taxa Básica Financeira', 'tags': ['redutor r', 'taxa básica financeira', 'taxa básica financeira tbf', 'taxa referencial', 'tbf', 'tr'], 'restricted': False, 'metadata': {'entities': [], 'norm_metadata': {}}, 'search_sync': datetime.datetime(2024, 11, 18, 12, 17, 12, 705000)}
+[INFO] Verificando documento ID 673b2fe85eb95b6afc88660f no monitor ID 645a8ec7cecc1de8839266a1
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 645a8ec7cecc1de8839266a1: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 673b2fe85eb95b6afc88660f no monitor ID 645a9056cecc1de8839266a2
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 645a9056cecc1de8839266a2: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 673b2fe85eb95b6afc88660f no monitor ID 645a909a9dcad7cfc8a70a8e
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 645a909a9dcad7cfc8a70a8e: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 673b2fe85eb95b6afc88660f no monitor ID 645a96f29dcad7cfc8a70a8f
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 645a96f29dcad7cfc8a70a8f: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 673b2fe85eb95b6afc88660f no monitor ID 647e42c68e2793241d7a7674
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647e42c68e2793241d7a7674: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 673b2fe85eb95b6afc88660f no monitor ID 647f7f42f7c169a25b1caf00
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f7f42f7c169a25b1caf00: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 673b2fe85eb95b6afc88660f no monitor ID 647f8400f7c169a25b1caf01
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f8400f7c169a25b1caf01: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 673b2fe85eb95b6afc88660f no monitor ID 647f84508e2793241d7a7675
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f84508e2793241d7a7675: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 673b2fe85eb95b6afc88660f no monitor ID 647f845ce69ea204db29a32c
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f845ce69ea204db29a32c: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 673b2fe85eb95b6afc88660f no monitor ID 647f84aaf7c169a25b1caf02
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f84aaf7c169a25b1caf02: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 673b2fe85eb95b6afc88660f no monitor ID 647f85ca8e2793241d7a7676
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f85ca8e2793241d7a7676: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 673b2fe85eb95b6afc88660f no monitor ID 647f861ff7c169a25b1caf03
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f861ff7c169a25b1caf03: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 673b2fe85eb95b6afc88660f no monitor ID 647f86e48e2793241d7a7677
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f86e48e2793241d7a7677: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 673b2fe85eb95b6afc88660f no monitor ID 647f87998e2793241d7a7678
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f87998e2793241d7a7678: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 673b2fe85eb95b6afc88660f no monitor ID 647f8848f7c169a25b1caf04
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f8848f7c169a25b1caf04: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 673b2fe85eb95b6afc88660f no monitor ID 647f88918e2793241d7a7679
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f88918e2793241d7a7679: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 673b2fe85eb95b6afc88660f no monitor ID 647f89eff7c169a25b1caf05
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f89eff7c169a25b1caf05: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 673b2fe85eb95b6afc88660f no monitor ID 647f8a33f7c169a25b1caf06
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f8a33f7c169a25b1caf06: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 673b2fe85eb95b6afc88660f no monitor ID 647f8af28e2793241d7a767a
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f8af28e2793241d7a767a: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 673b2fe85eb95b6afc88660f no monitor ID 647f8b7ce69ea204db29a32d
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f8b7ce69ea204db29a32d: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 673b2fe85eb95b6afc88660f no monitor ID 647f8bc7e69ea204db29a32e
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f8bc7e69ea204db29a32e: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 673b2fe85eb95b6afc88660f no monitor ID 651ef0f2f4f946f8f1550133
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 651ef0f2f4f946f8f1550133: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 673b2fe85eb95b6afc88660f no monitor ID 65eb67b601a0620d218ae33b
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 65eb67b601a0620d218ae33b: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
+[INFO] Verificando documento ID 673b2fe85eb95b6afc88660f no monitor ID 65eb67f701a0620d218ae33f
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Ocorrências de tags encontradas: {}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 65eb67f701a0620d218ae33f: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.', 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}}
 [INFO] Relatório final salvo para cliente ID 6453e226cc18ab8005e7ecb8
 [INFO] Iniciando verificação para cliente ID 6453e226cc18ab8005e7ecb8 entre 2024-11-14 e 2024-11-14 para origem BACEN
-[INFO] Monitores encontrados para cliente 6453e226cc18ab8005e7ecb8: 28
-[INFO] Documento encontrado com ID 6735e9ea16b60bc6050bd702: {'_id': ObjectId('6735e9ea16b60bc6050bd702'), 'origin': 'BACEN', 'source_oids': [ObjectId('613a98ca4396739de77a7cae')], 'norm_type': 'Comunicado', 'normalized_type': 'Comunicado', 'consolidated_type': 'Comunicados e Avisos', 'number': '42419', 'publish_date': datetime.datetime(2024, 11, 14, 3, 0), 'issuance_date': datetime.datetime(2024, 11, 14, 3, 0), 'title': 'Comunicado N° 42.419, 14/11/2024', 'subject': 'Divulga a Taxa Básica Financeira (TBF), o Redutor "R" e a Taxa Referencial (TR) relativos a 13 de novembro de 2024.', 'text': 'De acordo com o que determina a Resolução CMN nº 4.624, de 18.1.2018, comunicamos que a Taxa Básica Financeira (TBF), o Redutor "R" e a Taxa Referencial (TR) relativos ao período de 13.11.2024 a 13.12.2024 são, respectivamente: 0,7994% (sete mil, novecentos e noventa e quatro décimos de milésimo por cento), 1,00729044 (um inteiro e setecentos e vinte e nove mil e quarenta e quatro centésimos de milionésimos) e 0,0698% (seiscentos e noventa e oito décimos de milésimo por cento).\n\xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0Andre de Oliveira Amante\n\xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 Chefe do Departamento de Operações do Mercado Aberto', 'link': 'https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?tipo=Comunicado&numero=42419', 'act_date': datetime.datetime(2024, 11, 14, 0, 0), 'status': 2, 'section': '', 'status_document': 'Vigente', 'created_at': datetime.datetime(2024, 11, 14, 12, 17, 14, 672000), 'group': 'Política Monetária', 'theme': 'Taxa Básica Financeira', 'tags': ['redutor r', 'taxa básica financeira', 'taxa básica financeira tbf', 'taxa referencial', 'tbf', 'tr'], 'restricted': False, 'metadata': {'entities': [], 'norm_metadata': {}}, 'search_sync': datetime.datetime(2024, 11, 14, 12, 17, 14, 723000)}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 645a8ec7cecc1de8839266a1
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 645a8ec7cecc1de8839266a1: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 645a9056cecc1de8839266a2
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 645a9056cecc1de8839266a2: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 645a909a9dcad7cfc8a70a8e
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 645a909a9dcad7cfc8a70a8e: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 645a96f29dcad7cfc8a70a8f
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 645a96f29dcad7cfc8a70a8f: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 6467acbb8e2793241d7a7671
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 6467acbb8e2793241d7a7671: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647e42c68e2793241d7a7674
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647e42c68e2793241d7a7674: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f7f42f7c169a25b1caf00
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f7f42f7c169a25b1caf00: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8400f7c169a25b1caf01
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f8400f7c169a25b1caf01: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f84508e2793241d7a7675
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f84508e2793241d7a7675: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f845ce69ea204db29a32c
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f845ce69ea204db29a32c: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f84aaf7c169a25b1caf02
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f84aaf7c169a25b1caf02: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f85ca8e2793241d7a7676
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f85ca8e2793241d7a7676: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f861ff7c169a25b1caf03
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f861ff7c169a25b1caf03: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f86e48e2793241d7a7677
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f86e48e2793241d7a7677: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f87998e2793241d7a7678
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f87998e2793241d7a7678: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8848f7c169a25b1caf04
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f8848f7c169a25b1caf04: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f88918e2793241d7a7679
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f88918e2793241d7a7679: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f89eff7c169a25b1caf05
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f89eff7c169a25b1caf05: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8a33f7c169a25b1caf06
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f8a33f7c169a25b1caf06: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8af28e2793241d7a767a
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f8af28e2793241d7a767a: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8b7ce69ea204db29a32d
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f8b7ce69ea204db29a32d: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8bc7e69ea204db29a32e
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f8bc7e69ea204db29a32e: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 6499ebb1bfaafbc9bed9242e
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 6499ebb1bfaafbc9bed9242e: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 64d3d708e46b6ee23ef94218
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 64d3d708e46b6ee23ef94218: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 6513128be46b6ee23ef94254
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 6513128be46b6ee23ef94254: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 651ef0f2f4f946f8f1550133
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 651ef0f2f4f946f8f1550133: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 65eb67b601a0620d218ae33b
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 65eb67b601a0620d218ae33b: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 65eb67f701a0620d218ae33f
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 65eb67f701a0620d218ae33f: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Relatório final salvo para cliente ID 6453e226cc18ab8005e7ecb8
 [INFO] Iniciando verificação para cliente ID 6453e226cc18ab8005e7ecb8 entre 2024-11-14 e 2024-11-14 para origem BACEN
-[INFO] Monitores encontrados para cliente 6453e226cc18ab8005e7ecb8: 28
+[INFO] Monitores encontrados para cliente 6453e226cc18ab8005e7ecb8: 23
 [INFO] Documento encontrado com ID 6735e9ea16b60bc6050bd702: {'_id': ObjectId('6735e9ea16b60bc6050bd702'), 'origin': 'BACEN', 'source_oids': [ObjectId('613a98ca4396739de77a7cae')], 'norm_type': 'Comunicado', 'normalized_type': 'Comunicado', 'consolidated_type': 'Comunicados e Avisos', 'number': '42419', 'publish_date': datetime.datetime(2024, 11, 14, 3, 0), 'issuance_date': datetime.datetime(2024, 11, 14, 3, 0), 'title': 'Comunicado N° 42.419, 14/11/2024', 'subject': 'Divulga a Taxa Básica Financeira (TBF), o Redutor "R" e a Taxa Referencial (TR) relativos a 13 de novembro de 2024.', 'text': 'De acordo com o que determina a Resolução CMN nº 4.624, de 18.1.2018, comunicamos que a Taxa Básica Financeira (TBF), o Redutor "R" e a Taxa Referencial (TR) relativos ao período de 13.11.2024 a 13.12.2024 são, respectivamente: 0,7994% (sete mil, novecentos e noventa e quatro décimos de milésimo por cento), 1,00729044 (um inteiro e setecentos e vinte e nove mil e quarenta e quatro centésimos de milionésimos) e 0,0698% (seiscentos e noventa e oito décimos de milésimo por cento).\n\xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0Andre de Oliveira Amante\n\xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 Chefe do Departamento de Operações do Mercado Aberto', 'link': 'https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?tipo=Comunicado&numero=42419', 'act_date': datetime.datetime(2024, 11, 14, 0, 0), 'status': 2, 'section': '', 'status_document': 'Vigente', 'created_at': datetime.datetime(2024, 11, 14, 12, 17, 14, 672000), 'group': 'Política Monetária', 'theme': 'Taxa Básica Financeira', 'tags': ['redutor r', 'taxa básica financeira', 'taxa básica financeira tbf', 'taxa referencial', 'tbf', 'tr'], 'restricted': False, 'metadata': {'entities': [], 'norm_metadata': {}}, 'search_sync': datetime.datetime(2024, 11, 14, 12, 17, 14, 723000)}
 [INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 645a8ec7cecc1de8839266a1
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 645a8ec7cecc1de8839266a1: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 645a8ec7cecc1de8839266a1: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.'}
 [INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 645a9056cecc1de8839266a2
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 645a9056cecc1de8839266a2: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 645a9056cecc1de8839266a2: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.'}
 [INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 645a909a9dcad7cfc8a70a8e
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 645a909a9dcad7cfc8a70a8e: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
+[INFO] Tags positivas encontradas: ['financeira'] no documento ID 6735e9ea16b60bc6050bd702
+[INFO] Resultado para monitor 645a909a9dcad7cfc8a70a8e: {'captura_esperada': True, 'motivo': 'Tags positivas encontradas, o documento deveria ter sido capturado.', 'tags_positivas_encontradas': ['financeira']}
 [INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 645a96f29dcad7cfc8a70a8f
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 645a96f29dcad7cfc8a70a8f: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 6467acbb8e2793241d7a7671
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 6467acbb8e2793241d7a7671: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 645a96f29dcad7cfc8a70a8f: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.'}
 [INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647e42c68e2793241d7a7674
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647e42c68e2793241d7a7674: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647e42c68e2793241d7a7674: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.'}
 [INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f7f42f7c169a25b1caf00
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f7f42f7c169a25b1caf00: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f7f42f7c169a25b1caf00: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.'}
 [INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8400f7c169a25b1caf01
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f8400f7c169a25b1caf01: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f8400f7c169a25b1caf01: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.'}
 [INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f84508e2793241d7a7675
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f84508e2793241d7a7675: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f84508e2793241d7a7675: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.'}
 [INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f845ce69ea204db29a32c
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f845ce69ea204db29a32c: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f845ce69ea204db29a32c: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.'}
 [INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f84aaf7c169a25b1caf02
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f84aaf7c169a25b1caf02: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f84aaf7c169a25b1caf02: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.'}
 [INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f85ca8e2793241d7a7676
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f85ca8e2793241d7a7676: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f85ca8e2793241d7a7676: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.'}
 [INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f861ff7c169a25b1caf03
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f861ff7c169a25b1caf03: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f861ff7c169a25b1caf03: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.'}
 [INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f86e48e2793241d7a7677
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f86e48e2793241d7a7677: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f86e48e2793241d7a7677: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.'}
 [INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f87998e2793241d7a7678
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f87998e2793241d7a7678: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f87998e2793241d7a7678: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.'}
 [INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8848f7c169a25b1caf04
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f8848f7c169a25b1caf04: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f8848f7c169a25b1caf04: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.'}
 [INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f88918e2793241d7a7679
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f88918e2793241d7a7679: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f88918e2793241d7a7679: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.'}
 [INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f89eff7c169a25b1caf05
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f89eff7c169a25b1caf05: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f89eff7c169a25b1caf05: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.'}
 [INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8a33f7c169a25b1caf06
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f8a33f7c169a25b1caf06: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f8a33f7c169a25b1caf06: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.'}
 [INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8af28e2793241d7a767a
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f8af28e2793241d7a767a: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f8af28e2793241d7a767a: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.'}
 [INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8b7ce69ea204db29a32d
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f8b7ce69ea204db29a32d: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 647f8b7ce69ea204db29a32d: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.'}
 [INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8bc7e69ea204db29a32e
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f8bc7e69ea204db29a32e: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 6499ebb1bfaafbc9bed9242e
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 6499ebb1bfaafbc9bed9242e: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 64d3d708e46b6ee23ef94218
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 64d3d708e46b6ee23ef94218: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 6513128be46b6ee23ef94254
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 6513128be46b6ee23ef94254: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
+[INFO] Tags positivas encontradas: ['TEC'] no documento ID 6735e9ea16b60bc6050bd702
+[INFO] Resultado para monitor 647f8bc7e69ea204db29a32e: {'captura_esperada': True, 'motivo': 'Tags positivas encontradas, o documento deveria ter sido capturado.', 'tags_positivas_encontradas': ['TEC']}
 [INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 651ef0f2f4f946f8f1550133
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 651ef0f2f4f946f8f1550133: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 651ef0f2f4f946f8f1550133: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.'}
 [INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 65eb67b601a0620d218ae33b
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 65eb67b601a0620d218ae33b: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 65eb67f701a0620d218ae33f
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 65eb67f701a0620d218ae33f: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Relatório final salvo para cliente ID 6453e226cc18ab8005e7ecb8
-[INFO] Iniciando verificação para cliente ID 6453e226cc18ab8005e7ecb8 entre 2024-11-14 e 2024-11-14 para origem BACEN
-[INFO] Monitores encontrados para cliente 6453e226cc18ab8005e7ecb8: 28
-[INFO] Documento encontrado com ID 6735e9ea16b60bc6050bd702: {'_id': ObjectId('6735e9ea16b60bc6050bd702'), 'origin': 'BACEN', 'source_oids': [ObjectId('613a98ca4396739de77a7cae')], 'norm_type': 'Comunicado', 'normalized_type': 'Comunicado', 'consolidated_type': 'Comunicados e Avisos', 'number': '42419', 'publish_date': datetime.datetime(2024, 11, 14, 3, 0), 'issuance_date': datetime.datetime(2024, 11, 14, 3, 0), 'title': 'Comunicado N° 42.419, 14/11/2024', 'subject': 'Divulga a Taxa Básica Financeira (TBF), o Redutor "R" e a Taxa Referencial (TR) relativos a 13 de novembro de 2024.', 'text': 'De acordo com o que determina a Resolução CMN nº 4.624, de 18.1.2018, comunicamos que a Taxa Básica Financeira (TBF), o Redutor "R" e a Taxa Referencial (TR) relativos ao período de 13.11.2024 a 13.12.2024 são, respectivamente: 0,7994% (sete mil, novecentos e noventa e quatro décimos de milésimo por cento), 1,00729044 (um inteiro e setecentos e vinte e nove mil e quarenta e quatro centésimos de milionésimos) e 0,0698% (seiscentos e noventa e oito décimos de milésimo por cento).\n\xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0Andre de Oliveira Amante\n\xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 Chefe do Departamento de Operações do Mercado Aberto', 'link': 'https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?tipo=Comunicado&numero=42419', 'act_date': datetime.datetime(2024, 11, 14, 0, 0), 'status': 2, 'section': '', 'status_document': 'Vigente', 'created_at': datetime.datetime(2024, 11, 14, 12, 17, 14, 672000), 'group': 'Política Monetária', 'theme': 'Taxa Básica Financeira', 'tags': ['redutor r', 'taxa básica financeira', 'taxa básica financeira tbf', 'taxa referencial', 'tbf', 'tr'], 'restricted': False, 'metadata': {'entities': [], 'norm_metadata': {}}, 'search_sync': datetime.datetime(2024, 11, 14, 12, 17, 14, 723000)}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 645a8ec7cecc1de8839266a1
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 645a8ec7cecc1de8839266a1: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 645a9056cecc1de8839266a2
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 645a9056cecc1de8839266a2: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 645a909a9dcad7cfc8a70a8e
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 645a909a9dcad7cfc8a70a8e: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 645a96f29dcad7cfc8a70a8f
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 645a96f29dcad7cfc8a70a8f: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 6467acbb8e2793241d7a7671
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 6467acbb8e2793241d7a7671: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647e42c68e2793241d7a7674
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647e42c68e2793241d7a7674: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f7f42f7c169a25b1caf00
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f7f42f7c169a25b1caf00: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8400f7c169a25b1caf01
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f8400f7c169a25b1caf01: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f84508e2793241d7a7675
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f84508e2793241d7a7675: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f845ce69ea204db29a32c
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f845ce69ea204db29a32c: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f84aaf7c169a25b1caf02
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f84aaf7c169a25b1caf02: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f85ca8e2793241d7a7676
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f85ca8e2793241d7a7676: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f861ff7c169a25b1caf03
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f861ff7c169a25b1caf03: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f86e48e2793241d7a7677
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f86e48e2793241d7a7677: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f87998e2793241d7a7678
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f87998e2793241d7a7678: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8848f7c169a25b1caf04
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f8848f7c169a25b1caf04: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f88918e2793241d7a7679
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f88918e2793241d7a7679: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f89eff7c169a25b1caf05
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f89eff7c169a25b1caf05: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8a33f7c169a25b1caf06
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f8a33f7c169a25b1caf06: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8af28e2793241d7a767a
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f8af28e2793241d7a767a: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8b7ce69ea204db29a32d
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f8b7ce69ea204db29a32d: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8bc7e69ea204db29a32e
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f8bc7e69ea204db29a32e: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 6499ebb1bfaafbc9bed9242e
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 6499ebb1bfaafbc9bed9242e: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 64d3d708e46b6ee23ef94218
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 64d3d708e46b6ee23ef94218: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 6513128be46b6ee23ef94254
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 6513128be46b6ee23ef94254: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 651ef0f2f4f946f8f1550133
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 651ef0f2f4f946f8f1550133: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 65eb67b601a0620d218ae33b
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 65eb67b601a0620d218ae33b: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 65eb67f701a0620d218ae33f
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 65eb67f701a0620d218ae33f: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Relatório final salvo para cliente ID 6453e226cc18ab8005e7ecb8
-[INFO] Iniciando verificação para cliente ID 6453e226cc18ab8005e7ecb8 entre 2024-11-14 e 2024-11-14 para origem BACEN
-[INFO] Monitores encontrados para cliente 6453e226cc18ab8005e7ecb8: 28
-[INFO] Documento encontrado com ID 6735e9ea16b60bc6050bd702: {'_id': ObjectId('6735e9ea16b60bc6050bd702'), 'origin': 'BACEN', 'source_oids': [ObjectId('613a98ca4396739de77a7cae')], 'norm_type': 'Comunicado', 'normalized_type': 'Comunicado', 'consolidated_type': 'Comunicados e Avisos', 'number': '42419', 'publish_date': datetime.datetime(2024, 11, 14, 3, 0), 'issuance_date': datetime.datetime(2024, 11, 14, 3, 0), 'title': 'Comunicado N° 42.419, 14/11/2024', 'subject': 'Divulga a Taxa Básica Financeira (TBF), o Redutor "R" e a Taxa Referencial (TR) relativos a 13 de novembro de 2024.', 'text': 'De acordo com o que determina a Resolução CMN nº 4.624, de 18.1.2018, comunicamos que a Taxa Básica Financeira (TBF), o Redutor "R" e a Taxa Referencial (TR) relativos ao período de 13.11.2024 a 13.12.2024 são, respectivamente: 0,7994% (sete mil, novecentos e noventa e quatro décimos de milésimo por cento), 1,00729044 (um inteiro e setecentos e vinte e nove mil e quarenta e quatro centésimos de milionésimos) e 0,0698% (seiscentos e noventa e oito décimos de milésimo por cento).\n\xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0Andre de Oliveira Amante\n\xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 \xa0 Chefe do Departamento de Operações do Mercado Aberto', 'link': 'https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?tipo=Comunicado&numero=42419', 'act_date': datetime.datetime(2024, 11, 14, 0, 0), 'status': 2, 'section': '', 'status_document': 'Vigente', 'created_at': datetime.datetime(2024, 11, 14, 12, 17, 14, 672000), 'group': 'Política Monetária', 'theme': 'Taxa Básica Financeira', 'tags': ['redutor r', 'taxa básica financeira', 'taxa básica financeira tbf', 'taxa referencial', 'tbf', 'tr'], 'restricted': False, 'metadata': {'entities': [], 'norm_metadata': {}}, 'search_sync': datetime.datetime(2024, 11, 14, 12, 17, 14, 723000)}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 645a8ec7cecc1de8839266a1
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 645a8ec7cecc1de8839266a1: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 645a9056cecc1de8839266a2
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 645a9056cecc1de8839266a2: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 645a909a9dcad7cfc8a70a8e
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 645a909a9dcad7cfc8a70a8e: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 645a96f29dcad7cfc8a70a8f
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 645a96f29dcad7cfc8a70a8f: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 6467acbb8e2793241d7a7671
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 6467acbb8e2793241d7a7671: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647e42c68e2793241d7a7674
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647e42c68e2793241d7a7674: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f7f42f7c169a25b1caf00
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f7f42f7c169a25b1caf00: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8400f7c169a25b1caf01
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f8400f7c169a25b1caf01: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f84508e2793241d7a7675
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f84508e2793241d7a7675: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f845ce69ea204db29a32c
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f845ce69ea204db29a32c: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f84aaf7c169a25b1caf02
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f84aaf7c169a25b1caf02: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f85ca8e2793241d7a7676
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f85ca8e2793241d7a7676: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f861ff7c169a25b1caf03
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f861ff7c169a25b1caf03: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f86e48e2793241d7a7677
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f86e48e2793241d7a7677: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f87998e2793241d7a7678
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f87998e2793241d7a7678: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8848f7c169a25b1caf04
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f8848f7c169a25b1caf04: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f88918e2793241d7a7679
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f88918e2793241d7a7679: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f89eff7c169a25b1caf05
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f89eff7c169a25b1caf05: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8a33f7c169a25b1caf06
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f8a33f7c169a25b1caf06: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8af28e2793241d7a767a
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f8af28e2793241d7a767a: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8b7ce69ea204db29a32d
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f8b7ce69ea204db29a32d: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 647f8bc7e69ea204db29a32e
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 647f8bc7e69ea204db29a32e: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 6499ebb1bfaafbc9bed9242e
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 6499ebb1bfaafbc9bed9242e: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 64d3d708e46b6ee23ef94218
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 64d3d708e46b6ee23ef94218: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 6513128be46b6ee23ef94254
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 6513128be46b6ee23ef94254: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 651ef0f2f4f946f8f1550133
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 651ef0f2f4f946f8f1550133: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 65eb67b601a0620d218ae33b
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 65eb67b601a0620d218ae33b: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
-[INFO] Verificando documento ID 6735e9ea16b60bc6050bd702 no monitor ID 65eb67f701a0620d218ae33f
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags positivas encontradas: 0, Detalhes: Counter()
-[INFO] Ocorrências de tags encontradas: {}
-[INFO] Tags negativas encontradas: 0, Detalhes: Counter()
-[INFO] Porcentagem de tags positivas: 0%, negativas: 0%
-[INFO] Resultado da verificação: Captura esperada: False, Motivo: ['Nenhuma tag positiva obrigatória encontrada.']
-[INFO] Resultado para monitor 65eb67f701a0620d218ae33f: {'captura_esperada': False, 'num_tags_positivas_encontradas': 0, 'lista_tags_positivas_encontradas': {}, 'num_tags_negativas_encontradas': 0, 'lista_tags_negativas_encontradas': {}, 'porcentagem_positivas': 0, 'porcentagem_negativas': 0, 'motivo': ['Nenhuma tag positiva obrigatória encontrada.']}
+[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.
+[INFO] Resultado para monitor 65eb67b601a0620d218ae33b: {'captura_esperada': False, 'motivo': 'Nenhuma tag positiva encontrada.'}
 [INFO] Relatório final salvo para cliente ID 6453e226cc18ab8005e7ecb8
