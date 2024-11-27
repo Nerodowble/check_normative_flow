@@ -1,11 +1,30 @@
 from datetime import datetime
 from bson import ObjectId  # Import ObjectId para conversão de ID
+from pymongo import MongoClient
 from buscar_normativos import buscar_normativos
 from verificar_normativos_clientes import verificar_normativos_cliente
 from exibir_relatorio import exibir_relatorio
 from verificar_taxonomia import verificar_taxonomia
 from verificar_monitoramento import executar_verificacao_monitoramento
-from config import coll_un  # Certifique-se de que está importando a coleção de clientes
+
+# Configuração da conexão com o MongoDB
+def conectar_mongodb():
+    username = "readOnlyProd"
+    password = "by76HMOjhhf38Aiq"
+    uri = f"mongodb+srv://{username}:{password}@lbprod-pri.cuho0.mongodb.net/?tls=true"
+
+    try:
+        client = MongoClient(uri)
+        print("Conexão com o MongoDB realizada com sucesso!")
+        return client
+    except Exception as e:
+        print(f"Erro ao conectar ao MongoDB: {e}")
+        exit(1)
+
+# Criar a conexão com o MongoDB
+client = conectar_mongodb()
+db = client['legalbot_platform']
+coll_un = db['un']  # Coleção de clientes
 
 def obter_cliente_id(cliente_id=None, cliente_nome=None):
     """
@@ -64,8 +83,12 @@ if __name__ == "__main__":
     data_final = input("Informe a data final (formato DD/MM/YYYY): ")
 
     # Converter as datas para o formato esperado (YYYY-MM-DD)
-    data_inicial = datetime.strptime(data_inicial, "%d/%m/%Y").strftime("%Y-%m-%d")
-    data_final = datetime.strptime(data_final, "%d/%m/%Y").strftime("%Y-%m-%d")
+    try:
+        data_inicial = datetime.strptime(data_inicial, "%d/%m/%Y").strftime("%Y-%m-%d")
+        data_final = datetime.strptime(data_final, "%d/%m/%Y").strftime("%Y-%m-%d")
+    except ValueError:
+        print("Formato de data inválido. Encerrando o script.")
+        exit(1)
 
     # Etapa 1: Buscar normativos pela origem e data
     normativos = buscar_normativos(origin, data_inicial, data_final)
