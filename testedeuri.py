@@ -1,8 +1,8 @@
 from pymongo import MongoClient
 
 # Dados de conexão
-username = "readOnlyProd"
-password = "by76HMOjhhf38Aiq"
+username = ""
+password = ""
 uri = f"mongodb+srv://{username}:{password}@lbprod-pri.cuho0.mongodb.net/?tls=true"
 
 try:
