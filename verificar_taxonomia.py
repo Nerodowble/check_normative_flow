@@ -13,7 +13,8 @@ def verificar_taxonomia(normativo_id):
     
     # Obter a origem e as tags do normativo
     origem = normativo.get("origin")
-    tags_normativo = normativo.get("tags", [])
+    # Padronizar todas as tags para minúsculas para comparação insensível a maiúsculas/minúsculas
+    tags_normativo = [tag.lower() for tag in normativo.get("tags", [])]
     theme_normativo = normativo.get("theme", "")
 
     # Consultar regras de roteamento ativas na coleção `routing_rule` baseadas na origem
@@ -25,11 +26,12 @@ def verificar_taxonomia(normativo_id):
 
     # Verificar associação com a taxonomia e clientes associados
     for rule in routing_rules:
-        rule_ptags = rule.get("query", {}).get("ptags", [])
-        rule_ntags = rule.get("query", {}).get("ntags", [])
+        # Padronizar tags da regra para minúsculas
+        rule_ptags = [ptag.lower() for ptag in rule.get("query", {}).get("ptags", [])]
+        rule_ntags = [ntag.lower() for ntag in rule.get("query", {}).get("ntags", [])]
         rule_themes = rule.get("query", {}).get("themes", [])
 
-        # Verificar tags positivas e negativas
+        # Verificar tags positivas e negativas (comparação agora é case-insensitive)
         associated_ptags = [tag for tag in rule_ptags if tag in tags_normativo]
         associated_ntags = [tag for tag in rule_ntags if tag in tags_normativo]
         theme_match = theme_normativo not in rule_themes if rule_themes else True

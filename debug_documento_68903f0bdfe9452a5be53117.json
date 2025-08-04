@@ -1,0 +1,40 @@
+{
+    "_id": "68903f0bdfe9452a5be53117",
+    "origin": "ANATEL/DOU",
+    "source_oids": [
+        "63dbc9df0a3e40e0a45c883b",
+        "63dbca040a3e40e0a45c886c",
+        "63dbca040a3e40e0a45c886d",
+        "63dbcb570a3e40e0a45c8994"
+    ],
+    "norm_type": "Ato",
+    "normalized_type": "Atos Administrativos",
+    "consolidated_type": "Atos e Portarias",
+    "number": "9.143",
+    "publish_date": "2025-08-04T03:00:00",
+    "issuance_date": "2025-08-04T03:00:00",
+    "title": "ATO Nº 9.143, DE 31 DE JULHO DE 2025",
+    "subject": "ATO Nº 9.143, DE 31 DE JULHO DE 2025 Processo nº 53500.100253/2024-93. Confere à INMARSAT SOLUTIONS (CANADA) INC., entidade constituída sob as leis do Reino Unido, o Direito de Exploração, no Brasil, do satélite estrangeiro INMARSAT-4 F1, pelo prazo até 31 de dezembro de 2028. O prazo máximo para entrada em operação do referido satélite é de 2 (dois) anos. Os representantes legais da INMARSAT SOLU...",
+    "text": "<div class=\"texto-dou\">\n \n \n  <p class=\"identifica\">ATO Nº 9.143, DE 31 DE JULHO DE 2025</p>\n  <p class=\"dou-paragraph\">Processo nº 53500.100253/2024-93. Confere à INMARSAT SOLUTIONS (CANADA) INC., entidade constituída sob as leis do Reino Unido, o Direito de Exploração, no Brasil, do satélite estrangeiro INMARSAT-4 F1, pelo prazo até 31 de dezembro de 2028. O prazo máximo para entrada em operação do referido satélite é de 2 (dois) anos. Os representantes legais da INMARSAT SOLUTIONS (CANADA) INC. no Brasil, no que se refere ao satélite INMARSAT-4 F1, são a INMARSAT BRASIL SATÉLITES LTDA., CNPJ nº 03.398.946/0001-46, e a VIASAT BRASIL PARTICIPAÇÕES LTDA., CNPJ nº 24.626.589/0001-04, empresas constituídas sob as leis brasileiras, com sede e administração no País.</p>\n  <p class=\"assina\">CARLOS MANUEL BAIGORRI</p>\n  <p class=\"cargo\">Presidente do Conselho</p>\n \n</div>",
+    "link": "https://www.in.gov.br/web/dou/-/ato-n-9.143-de-31-de-julho-de-2025-645934693",
+    "act_date": "2025-08-04T00:00:00",
+    "status": 2,
+    "section": "1",
+    "status_document": "",
+    "created_at": "2025-08-04T05:05:48.288000",
+    "group": "ANATEL/DOU",
+    "theme": "ANATEL/DOU - Ato",
+    "tags": [
+        "DOU",
+        "Ministério das Comunicações",
+        "Agência Nacional de Telecomunicações",
+        "Conselho Diretor"
+    ],
+    "restricted": false,
+    "metadata": {
+        "entities": [],
+        "norm_metadata": {}
+    },
+    "metadados": [],
+    "search_sync": "2025-08-04T05:05:48.346000"
+}

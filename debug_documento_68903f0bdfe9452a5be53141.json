@@ -1,0 +1,40 @@
+{
+    "_id": "68903f0bdfe9452a5be53141",
+    "origin": "ANATEL/DOU",
+    "source_oids": [
+        "63dbc9df0a3e40e0a45c883b",
+        "63dbca040a3e40e0a45c886c",
+        "63dbca040a3e40e0a45c886d",
+        "63dbca1d0a3e40e0a45c8889",
+        "63dbca1d0a3e40e0a45c888a"
+    ],
+    "norm_type": "Ato",
+    "normalized_type": "Atos Administrativos",
+    "consolidated_type": "Atos e Portarias",
+    "number": "9.096",
+    "publish_date": "2025-08-04T03:00:00",
+    "issuance_date": "2025-08-04T03:00:00",
+    "title": "ATO Nº 9.096, DE 31 DE JULHO DE 2025",
+    "subject": "ATO Nº 9.096, DE 31 DE JULHO DE 2025 Processo nº 53520.001031/2025-31. Outorgar autorização para uso de Radiofrequências à(ao) Radio Regional Ltda, executante do serviço Radiodifusão Sonora em Frequência Modulada, CNPJ nº 03.897.715/0001-87, no município de Rancho Queimado/SC, até 17/09/2030, a contar da data de publicação deste Ato, visando execução do Serviço Auxiliar de Radiodifusão e Correlato...",
+    "text": "<div class=\"texto-dou\">\n \n \n  <p class=\"identifica\">ATO Nº 9.096, DE 31 DE JULHO DE 2025</p>\n  <p class=\"dou-paragraph\">Processo nº 53520.001031/2025-31. Outorgar autorização para uso de Radiofrequências à(ao) Radio Regional Ltda, executante do serviço Radiodifusão Sonora em Frequência Modulada, CNPJ nº 03.897.715/0001-87, no município de Rancho Queimado/SC, até 17/09/2030, a contar da data de publicação deste Ato, visando execução do Serviço Auxiliar de Radiodifusão e Correlatos de Ligação para Transmissão de Programas.</p>\n  <p class=\"assina\">Celso Francisco Zemann</p>\n  <p class=\"cargo\">Gerente</p>\n \n</div>",
+    "link": "https://www.in.gov.br/web/dou/-/ato-n-9.096-de-31-de-julho-de-2025-645938491",
+    "act_date": "2025-08-04T00:00:00",
+    "status": 2,
+    "section": "1",
+    "status_document": "",
+    "created_at": "2025-08-04T05:05:36.767000",
+    "group": "Atos Administrativos",
+    "theme": "Publicações e Divulgações",
+    "tags": [
+        "radiodifusão sonora em frequência modulada",
+        "autorização",
+        "publicação"
+    ],
+    "restricted": false,
+    "metadata": {
+        "entities": [],
+        "norm_metadata": {}
+    },
+    "metadados": [],
+    "search_sync": "2025-08-04T05:05:36.838000"
+}

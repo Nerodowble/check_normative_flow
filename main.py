@@ -6,6 +6,8 @@ from verificar_normativos_clientes import verificar_normativos_cliente
 from exibir_relatorio import exibir_relatorio
 from verificar_taxonomia import verificar_taxonomia
 from verificar_monitoramento import executar_verificacao_monitoramento
+from analisar_associados import executar_analise_associados
+from listar_regras_cliente import listar_regras_cliente
 
 # Configuração da conexão com o MongoDB
 def conectar_mongodb():
@@ -74,6 +76,9 @@ if __name__ == "__main__":
     if not cliente_id:
         print("Falha ao localizar o cliente. Encerrando o script.")
         exit(1)
+
+    # Etapa Preliminar: Listar todas as regras ativas para o cliente
+    listar_regras_cliente(cliente_id)
     
     # Solicitar a origem e as datas de pesquisa
     origin = input("Informe a origem do normativo (ex: Receita Federal/DOU): ")
@@ -117,6 +122,15 @@ if __name__ == "__main__":
     # Etapa 4: Exibir relatório final chamando a função exibir_relatorio
     exibir_relatorio(clientes_dict, documentos_faltantes)
 
-    # Etapa 5: Executar a verificação de monitoramento e salvar o relatório JSON
-    executar_verificacao_monitoramento(cliente_id, origin, data_inicial, data_final, documentos_faltantes)
-    print("Verificação de monitoramento concluída.")
+    # Etapa 5: Executar a verificação de monitoramento para os documentos FALTANTES
+    if documentos_faltantes:
+        executar_verificacao_monitoramento(cliente_id, origin, data_inicial, data_final, documentos_faltantes)
+        print("Verificação de monitoramento concluída.")
+    else:
+        print("Nenhum documento faltante para analisar no monitoramento.")
+
+    # Etapa 6: Analisar a causa da associação para os documentos ENCONTRADOS
+    for cliente_nome, dados_cliente in clientes_dict.items():
+        documentos_associados_ids = dados_cliente.get("documentos_ids")
+        if documentos_associados_ids:
+            executar_analise_associados(list(documentos_associados_ids), cliente_id)

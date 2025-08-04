@@ -1,0 +1,19 @@
+[
+    {
+        "total_normativos_entrados": 1500,
+        "origens": ["OrgaoA", "OrgaoB", "OrgaoC"],
+        "total_normativos_por_origem": {"OrgaoA": 500, "OrgaoB": 600, "OrgaoC": 400},
+        "taxa_erros_scraping": 0.05,
+        "taxa_validacao_manual": 0.10,
+        "tempo_medio_processamento": "00:15:00",
+        "taxa_atualizacao_normativos": 0.20,
+        "taxa_duplicidade": 0.02,
+        "taxa_compliance": 0.95,
+        "erros_alertas": [
+            {"origem": "OrgaoA", "erro": "Erro de formatação", "solucao": "Revisar formatação"},
+            {"origem": "OrgaoB", "erro": "Timeout", "solucao": "Verificar conexão"}
+        ],
+        "atrasos_coleta": {"OrgaoA": 2, "OrgaoB": 1, "OrgaoC": 0},
+        "taxa_aceitacao_cliente": {"Cliente1": 0.90, "Cliente2": 0.95, "Cliente3": 0.85}
+    }
+]

@@ -1,4 +1,5 @@
 import json
+import re
 from bson import ObjectId
 from config import coll_monitor, coll_norm
 from collections import Counter
@@ -29,53 +30,110 @@ def contar_ocorrencias_tags(texto, tags):
 
 def verificar_documento_por_monitor(documento, monitor):
     """
-    Verifica se o documento atende aos critérios de um monitor específico.
+    Verifica se o documento atende aos critérios de um monitor específico,
+    considerando todos os seus filtros e múltiplos formatos de tag.
     Retorna uma análise detalhada.
     """
-    texto = documento.get("text", "").lower()
+    # Cria um "super texto" concatenando os campos relevantes para uma busca mais abrangente.
+    # Limpa o texto de tags HTML para uma busca mais precisa
+    raw_text = str(documento.get("text", ""))
+    clean_text = re.sub('<[^<]+?>', '', raw_text)
+
+    texto_busca = (
+        str(documento.get("title", "")) + " " +
+        str(documento.get("subject", "")) + " " +
+        clean_text
+    ).lower()
+    
     filtros = monitor.get("filters", [])
     
     log_detalhado(f"[INFO] Verificando documento ID {documento.get('_id')} no monitor ID {monitor.get('_id')}")
-    
-    for filtro in filtros:
-        # Verificação das tags negativas - PRIORIDADE
-        tags_negativas = [tag for grupo in filtro.get("tag_negative", []) for tag in grupo.get("value", [])]
-        ocorrencias_negativas = contar_ocorrencias_tags(texto, tags_negativas)
-        num_tags_negativas_encontradas = sum(1 for ocorrencia in ocorrencias_negativas.values() if ocorrencia > 0)
 
-        if num_tags_negativas_encontradas > 0:
-            # Se uma tag negativa for encontrada, isso significa que o documento não deveria estar associado ao cliente.
-            log_detalhado("[INFO] Tags negativas encontradas, o documento não deve ser associado.")
+    resultados_filtros = []
+
+    for i, filtro in enumerate(filtros):
+        log_detalhado(f"[INFO] Avaliando filtro {i+1}/{len(filtros)} do monitor.")
+        
+        # 1. Extrair e verificar tags negativas (lógica final e correta)
+        tags_negativas_raw = filtro.get("tag_negative", [])
+        tags_negativas = [
+            tag.lower()
+            for grupo in tags_negativas_raw
+            for tag in grupo.get("value", [])
+            if isinstance(tag, str) and tag
+        ]
+        ocorrencias_negativas = contar_ocorrencias_tags(texto_busca, tags_negativas)
+        if any(v > 0 for v in ocorrencias_negativas.values()):
+            motivo = f"Filtro {i+1}: Tags negativas encontradas, documento não deve ser associado."
+            log_detalhado(f"[RESULT] {motivo}")
+            # Se uma tag negativa é encontrada, este filtro resulta em um veto.
+            # Podemos parar de verificar este monitor e considerá-lo como "não capturar".
             return {
                 "captura_esperada": False,
-                "motivo": "Tags negativas encontradas, o documento não deve ser associado ao cliente.",
-                "num_tags_negativas_encontradas": num_tags_negativas_encontradas,
+                "motivo": motivo,
+                "num_tags_negativas_encontradas": sum(1 for v in ocorrencias_negativas.values() if v > 0),
                 "lista_tags_negativas_encontradas": dict(ocorrencias_negativas)
             }
 
-        # Se nenhuma tag negativa for encontrada, verificar as tags positivas
-        tags_positivas = [tag for grupo in filtro.get("tag_positive", []) for tag in grupo.get("value", [])]
-        ocorrencias_positivas = contar_ocorrencias_tags(texto, tags_positivas)
-        num_tags_positivas_encontradas = sum(1 for ocorrencia in ocorrencias_positivas.values() if ocorrencia > 0)
+        # 2. Verificar tags positivas com a lógica final e correta
+        grupos_positivos_raw = filtro.get("tag_positive", [])
+        
+        # Para o relatório de falha, calcula as ocorrências de todas as tags positivas do filtro.
+        todas_tags_positivas_do_filtro = [
+            tag.lower()
+            for grupo in grupos_positivos_raw
+            for tag in grupo.get("value", [])
+            if isinstance(tag, str) and tag
+        ]
+        ocorrencias_positivas = contar_ocorrencias_tags(texto_busca, todas_tags_positivas_do_filtro)
 
-        if num_tags_positivas_encontradas > 0:
-            # Se pelo menos uma tag positiva for encontrada, o documento deveria ter sido associado ao cliente
-            log_detalhado("[INFO] Tags positivas encontradas, o documento deveria ter sido capturado e associado ao cliente.")
+        if not grupos_positivos_raw:
+            continue
+
+        todos_grupos_corresponderam = True
+        tags_encontradas_no_filtro = {}
+
+        for grupo in grupos_positivos_raw:
+            # A lógica E/OU está aninhada, precisamos descer um nível
+            subgrupos = grupo.get("value", [])
+            for subgrupo in subgrupos:
+                if isinstance(subgrupo, dict) and subgrupo.get("operator") == "Or":
+                    tags_do_subgrupo = [tag.lower() for tag in subgrupo.get("value", []) if isinstance(tag, str) and tag]
+                    
+                    if not any(texto_busca.count(tag) > 0 for tag in tags_do_subgrupo):
+                        todos_grupos_corresponderam = False
+                        break
+                    else:
+                        for tag in tags_do_subgrupo:
+                            if texto_busca.count(tag) > 0:
+                                tags_encontradas_no_filtro[tag] = texto_busca.count(tag)
+            if not todos_grupos_corresponderam:
+                break
+        
+        if todos_grupos_corresponderam and tags_encontradas_no_filtro:
+            motivo = f"Filtro {i+1}: Todas as condições de tags positivas foram atendidas."
+            log_detalhado(f"[RESULT] {motivo}")
             return {
                 "captura_esperada": True,
-                "motivo": "Tags positivas encontradas, o documento deveria ter sido capturado.",
-                "num_tags_positivas_encontradas": num_tags_positivas_encontradas,
-                "lista_tags_positivas_encontradas": dict(ocorrencias_positivas)
+                "motivo": motivo,
+                "num_tags_positivas_encontradas": len(tags_encontradas_no_filtro),
+                "lista_tags_positivas_encontradas": tags_encontradas_no_filtro
             }
+        
+        # Guarda o resultado de falha deste filtro para o relatório final, caso nenhum filtro dê match
+        resultados_filtros.append({
+            "filtro": i + 1,
+            "motivo": "Nenhuma tag positiva encontrada neste filtro.",
+            "ocorrencias": dict(ocorrencias_positivas)
+        })
 
-        # Caso nenhuma tag positiva seja encontrada
-        log_detalhado("[INFO] Nenhuma tag positiva encontrada, o documento não atende aos critérios de captura.")
-        return {
-            "captura_esperada": False,
-            "motivo": "Nenhuma tag positiva encontrada.",
-            "num_tags_positivas_encontradas": num_tags_positivas_encontradas,
-            "lista_tags_positivas_encontradas": dict(ocorrencias_positivas)
-        }
+    # 3. Se o loop terminar, nenhum filtro deu match positivo
+    log_detalhado("[RESULT] Nenhum dos filtros do monitor resultou em captura.")
+    return {
+        "captura_esperada": False,
+        "motivo": "Nenhum dos filtros do monitor correspondeu aos critérios de captura (sem tags positivas encontradas).",
+        "detalhes_filtros": resultados_filtros
+    }
 
 def verificar_monitoramento(cliente_id, origem, data_inicial, data_final, documentos_faltantes):
     """

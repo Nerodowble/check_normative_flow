@@ -1,0 +1,39 @@
+{
+    "_id": "68903f0bdfe9452a5be53091",
+    "origin": "ANATEL/DOU",
+    "source_oids": [
+        "63dbc9df0a3e40e0a45c883b",
+        "63dbca040a3e40e0a45c886c",
+        "63dbca040a3e40e0a45c886d",
+        "63dbca1d0a3e40e0a45c8889",
+        "63dbcb7f0a3e40e0a45c89b8"
+    ],
+    "norm_type": "Ato",
+    "normalized_type": "Atos Administrativos",
+    "consolidated_type": "Atos e Portarias",
+    "number": "31",
+    "publish_date": "2025-08-04T03:00:00",
+    "issuance_date": "2025-08-04T03:00:00",
+    "title": "ATOS DE 31 DE JULHO DE 2025",
+    "subject": "ATOS DE 31 DE JULHO DE 2025 Nº 9.078 - Expede autorização a PROTEC PRODUTOS AGRICOLAS LTDA, CNPJ nº 01.849.036/0001-07, para explorar Serviços de Telecomunicações de Interesse Restrito, por prazo indeterminado, sem caráter de exclusividade, e tendo como área de prestação de serviço todo o território nacional. Nº 9.079 - Extingue, por cassação, a autorização do Serviço de Telecomunicações de Intere...",
+    "text": "<div class=\"texto-dou\">\n \n \n  <p class=\"identifica\">ATOS DE 31 DE JULHO DE 2025</p>\n  <p class=\"dou-paragraph\">Nº 9.078 - Expede autorização a PROTEC PRODUTOS AGRICOLAS LTDA, CNPJ nº 01.849.036/0001-07, para explorar Serviços de Telecomunicações de Interesse Restrito, por prazo indeterminado, sem caráter de exclusividade, e tendo como área de prestação de serviço todo o território nacional.</p>\n  <p class=\"dou-paragraph\">Nº 9.079 - Extingue, por cassação, a autorização do Serviço de Telecomunicações de Interesse Restrito, expedida a RÁDIO CULTURA DE UBERLÂNDIA LTDA, inscrito no CNPJ nº 25.630.013/0001-75, tendo em vista a perda de condição indispensável à manutenção da autorização, com fulcro nos arts. 138 e 139, da Lei nº 9.472, de 16 de julho de 1997, e declara também notificado o desinteresse para exploração do Serviço Auxiliar de Radiodifusão e Correlatos (SARC) na modalidade Ligação para Transmissão de Programas, bem como o direito de uso de radiofrequências associadas.</p>\n  <p class=\"assina\">Otávio Barbosa da Silva Soares</p>\n  <p class=\"cargo\">Gerente</p>\n \n</div>",
+    "link": "https://www.in.gov.br/web/dou/-/atos-de-31-de-julho-de-2025-645918998",
+    "act_date": "2025-08-04T00:00:00",
+    "status": 2,
+    "section": "1",
+    "status_document": "",
+    "created_at": "2025-08-04T05:06:22.846000",
+    "group": "Contratos e Acordos",
+    "theme": "Homologações e Autorizações",
+    "tags": [
+        "autorização",
+        "exclusividade"
+    ],
+    "restricted": false,
+    "metadata": {
+        "entities": [],
+        "norm_metadata": {}
+    },
+    "metadados": [],
+    "search_sync": "2025-08-04T05:06:22.860000"
+}
