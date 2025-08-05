@@ -10,25 +10,15 @@ def teste_especifico():
     Primeiro, ele exibe a estrutura de um monitor específico para análise.
     """
     # --- Parâmetros de Teste ---
-    documento_id_teste = "68903f0bdfe9452a5be530eb"
+    # Usando um ID de documento diferente para testar o fluxo.
+    documento_id_teste = "68903f0bdfe9452a5be53091"
     cliente_id_teste = "62aa15ba5ccad9aa706a2f4d"
-    monitor_id_teste = "64f86a93e46b6ee23ef94236"  # O monitor que deveria corresponder
     # -------------------------
 
     print("=" * 60)
-    print(f"INSPECIONANDO A ESTRUTURA DO MONITOR ID: {monitor_id_teste}")
+    print(f"Iniciando teste de análise para o documento ID: {documento_id_teste}")
     print("=" * 60)
 
-    # Busca o monitor específico no banco de dados
-    monitor_obj = coll_monitor.find_one({"_id": ObjectId(monitor_id_teste)})
-    
-    if monitor_obj:
-        print(json.dumps(monitor_obj, indent=4, ensure_ascii=False, default=json_converter))
-    else:
-        print(f"!!! Monitor com ID {monitor_id_teste} não encontrado. !!!")
-
-    print("\n" + "=" * 60)
-    print(f"Iniciando teste de análise para o documento ID: {documento_id_teste}")
     print(f"Cliente ID: {cliente_id_teste}")
     print("=" * 60)
 

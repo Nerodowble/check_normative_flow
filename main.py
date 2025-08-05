@@ -8,6 +8,7 @@ from verificar_taxonomia import verificar_taxonomia
 from verificar_monitoramento import executar_verificacao_monitoramento
 from analisar_associados import executar_analise_associados
 from listar_regras_cliente import listar_regras_cliente
+from relatorio_avancado import gerar_relatorio_avancado_pos_envio
 
 # Configuração da conexão com o MongoDB
 def conectar_mongodb():
@@ -72,13 +73,15 @@ if __name__ == "__main__":
         exit(1)
 
     # Obter o ID do cliente para usar nas próximas operações
-    cliente_id = obter_cliente_id(cliente_id=cliente_id, cliente_nome=cliente_nome)
-    if not cliente_id:
+    cliente_id_obj = obter_cliente_id(cliente_id=cliente_id, cliente_nome=cliente_nome)
+    if not cliente_id_obj:
         print("Falha ao localizar o cliente. Encerrando o script.")
         exit(1)
+    
+    cliente_id_str = str(cliente_id_obj)
 
     # Etapa Preliminar: Listar todas as regras ativas para o cliente
-    listar_regras_cliente(cliente_id)
+    listar_regras_cliente(cliente_id_str)
     
     # Solicitar a origem e as datas de pesquisa
     origin = input("Informe a origem do normativo (ex: Receita Federal/DOU): ")
@@ -99,7 +102,7 @@ if __name__ == "__main__":
     normativos = buscar_normativos(origin, data_inicial, data_final)
 
     # Etapa 2: Verificar normativos para o cliente específico
-    clientes_dict, documentos_faltantes = verificar_normativos_cliente(normativos, cliente_id=cliente_id)
+    clientes_dict, documentos_faltantes = verificar_normativos_cliente(normativos, cliente_id=cliente_id_str)
 
     # Etapa 3: Para cada cliente com documentos faltantes, verificar a associação de taxonomia
     for cliente_nome, dados_cliente in clientes_dict.items():
@@ -124,7 +127,7 @@ if __name__ == "__main__":
 
     # Etapa 5: Executar a verificação de monitoramento para os documentos FALTANTES
     if documentos_faltantes:
-        executar_verificacao_monitoramento(cliente_id, origin, data_inicial, data_final, documentos_faltantes)
+        executar_verificacao_monitoramento(cliente_id_str, origin, data_inicial, data_final, documentos_faltantes)
         print("Verificação de monitoramento concluída.")
     else:
         print("Nenhum documento faltante para analisar no monitoramento.")
@@ -133,4 +136,7 @@ if __name__ == "__main__":
     for cliente_nome, dados_cliente in clientes_dict.items():
         documentos_associados_ids = dados_cliente.get("documentos_ids")
         if documentos_associados_ids:
-            executar_analise_associados(list(documentos_associados_ids), cliente_id)
+            executar_analise_associados(list(documentos_associados_ids), cliente_id_str)
+
+    # Etapa 7: Gerar o Relatório Avançado de Pós-Envio
+    gerar_relatorio_avancado_pos_envio(cliente_id_str, origin)

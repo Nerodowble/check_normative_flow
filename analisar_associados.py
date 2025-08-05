@@ -2,7 +2,7 @@ import json
 from bson import ObjectId
 from config import coll_norm, coll_normative_un, coll_monitor, coll_routing_rule
 from verificar_monitoramento import verificar_documento_por_monitor
-from verificar_taxonomia import verificar_taxonomia
+from analisar_taxonomia import analisar_associacao_por_taxonomia
 
 def analisar_associacao_documento(documento_id, cliente_id):
     """
@@ -44,19 +44,27 @@ def analisar_associacao_documento(documento_id, cliente_id):
             "detalhes": "O documento foi marcado como capturado por um monitor, mas a simulação atual não conseguiu replicar essa captura. Isso pode indicar uma regra de monitoramento que foi alterada ou desativada desde a captura original."
         }
 
-    else: # Se from_monitor for False, verificamos apenas via Taxonomia
-        resultado_taxonomia = verificar_taxonomia(documento_id)
-        for res in resultado_taxonomia:
-            if res.get("associado_ao_cliente") and res.get("cliente_id") == cliente_id:
-                 return {
-                    "tipo": "Taxonomia/Roteamento",
-                    "nome_regra": res.get("taxonomia"),
-                    "descricao_regra": res.get("descricao"),
+    else:  # Se from_monitor for False, a associação veio da Taxonomia ou foi Manual.
+        # Tenta primeiro analisar via Taxonomia/Roteamento.
+        resultado_taxonomia = analisar_associacao_por_taxonomia(documento_id, cliente_id)
+
+        # Se a análise de taxonomia falhar por falta de dados, verificamos a hipótese de encaminhamento manual.
+        if resultado_taxonomia.get("tipo") == "Taxonomia/Roteamento (Dados Insuficientes)":
+            associated_uns = assoc_data.get("associated_uns", [])
+            # A presença de 'forwarded_at' é a prova da ação manual.
+            if associated_uns and any("forwarded_at" in un for un in associated_uns):
+                primeiro_encaminhamento = next((un for un in associated_uns if "forwarded_at" in un), None)
+                return {
+                    "tipo": "Encaminhamento Manual",
+                    "detalhes": "O documento foi localizado na Busca e encaminhado manualmente por um usuário para uma ou mais áreas.",
                     "detalhes_match": {
-                        "tags_correspondentes": res.get("tags_correspondentes")
+                        "primeiro_encaminhamento_em": primeiro_encaminhamento.get("forwarded_at") if primeiro_encaminhamento else "Não encontrado",
+                        "total_areas_associadas": len(associated_uns)
                     }
                 }
-        return {"tipo": "Taxonomia/Roteamento (Falhou)", "detalhes": "Match de taxonomia indicado, mas nenhuma regra de roteamento correspondente foi encontrada."}
+        
+        # Se a análise de taxonomia foi bem-sucedida ou falhou por outro motivo, retorna o resultado original.
+        return resultado_taxonomia
 
 def executar_analise_associados(documentos_ids, cliente_id):
     """

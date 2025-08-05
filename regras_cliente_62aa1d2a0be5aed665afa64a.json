@@ -1,0 +1,1063 @@
+{
+    "cliente_id": "62aa1d2a0be5aed665afa64a",
+    "data_extracao": "2025-08-05T17:40:38.880018",
+    "regras_monitoramento": [],
+    "regras_taxonomia_roteamento": [
+        {
+            "id": "686d30f7833e39c55b814916",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814917",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814918",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814919",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814ac6",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814ac7",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814acb",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814acc",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814ad1",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814add",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814afc",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814b0f",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814b27",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814b2b",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814b3e",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814b3f",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814b40",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814b4c",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814b59",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814b5b",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814b5c",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814b5d",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814b5e",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814b61",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814b76",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814c48",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814c49",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814c4a",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814c4b",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814c4c",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814c4d",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814c4f",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814c50",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814cf0",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814cf6",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814cf7",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814d8f",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814de0",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814f9b",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814fba",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814fc8",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814fda",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814fdb",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814fdf",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814ff3",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814ff4",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b814ff5",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b815004",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b815011",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b815013",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b815014",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b815015",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b815016",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b815019",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b81502e",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b81509f",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b8150a0",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b8150a1",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b8150d1",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b8150d2",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b8150d7",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b8150d8",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b8150e1",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b81510c",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b81510d",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b81510e",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b81510f",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b815110",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b815111",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b815172",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b815173",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b815174",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b815242",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b815243",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b8152a0",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b8152a1",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b8152a2",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b8152ae",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b815412",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b815435",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b81544b",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b81545f",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b8154f5",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b8154f6",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b8154f7",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b81553c",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b815544",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b815545",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b81554b",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b81554c",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b815560",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b815678",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b81567c",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b815682",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b8156d2",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        },
+        {
+            "id": "686d30f7833e39c55b815711",
+            "titulo": "",
+            "assunto": "",
+            "criterios": {
+                "origens": [],
+                "tags_positivas_ptags": [],
+                "tags_negativas_ntags": [],
+                "themes": []
+            }
+        }
+    ]
+}

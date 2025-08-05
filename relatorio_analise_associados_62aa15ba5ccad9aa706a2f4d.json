@@ -1,7 +1,7 @@
 [
     {
-        "documento_id": "68903f0bdfe9452a5be53079",
-        "title": "RESOLUÇÃO ANATEL Nº 780, DE 1º DE AGOSTO DE 2025",
+        "documento_id": "68903f0bdfe9452a5be53011",
+        "title": "ATOS DE 30 DE JULHO DE 2025",
         "causa_da_associacao": {
             "tipo": "Monitoramento",
             "id_regra": "665f3c676042b7f8da167e41",
@@ -10,10 +10,63 @@
             "detalhes_match": {
                 "captura_esperada": true,
                 "motivo": "Filtro 1: Todas as condições de tags positivas foram atendidas.",
-                "num_tags_positivas_encontradas": 2,
+                "num_tags_positivas_encontradas": 1,
                 "lista_tags_positivas_encontradas": {
-                    "lca": 1,
-                    "cri": 3
+                    "cri": 8
+                }
+            }
+        }
+    },
+    {
+        "documento_id": "68903f0bdfe9452a5be53091",
+        "title": "ATOS DE 31 DE JULHO DE 2025",
+        "causa_da_associacao": {
+            "tipo": "Monitoramento",
+            "id_regra": "665f3c676042b7f8da167e41",
+            "nome_regra": "Renata - investimentos",
+            "status_regra": "Ativo",
+            "detalhes_match": {
+                "captura_esperada": true,
+                "motivo": "Filtro 1: Todas as condições de tags positivas foram atendidas.",
+                "num_tags_positivas_encontradas": 1,
+                "lista_tags_positivas_encontradas": {
+                    "cri": 1
+                }
+            }
+        }
+    },
+    {
+        "documento_id": "68903f0bdfe9452a5be53094",
+        "title": "ATOS DE 30 DE JULHO DE 2025",
+        "causa_da_associacao": {
+            "tipo": "Monitoramento",
+            "id_regra": "67c07841b853ab961e3a268f",
+            "nome_regra": "Aoc - monitoramento",
+            "status_regra": "Ativo",
+            "detalhes_match": {
+                "captura_esperada": true,
+                "motivo": "Filtro 1: Todas as condições de tags positivas foram atendidas.",
+                "num_tags_positivas_encontradas": 1,
+                "lista_tags_positivas_encontradas": {
+                    "ligação": 4
+                }
+            }
+        }
+    },
+    {
+        "documento_id": "68903f0bdfe9452a5be5304b",
+        "title": "Resolução Interna Anatel nº 467, de 30 de julho de 2025",
+        "causa_da_associacao": {
+            "tipo": "Monitoramento",
+            "id_regra": "665f3c676042b7f8da167e41",
+            "nome_regra": "Renata - investimentos",
+            "status_regra": "Ativo",
+            "detalhes_match": {
+                "captura_esperada": true,
+                "motivo": "Filtro 1: Todas as condições de tags positivas foram atendidas.",
+                "num_tags_positivas_encontradas": 1,
+                "lista_tags_positivas_encontradas": {
+                    "cri": 1
                 }
             }
         }
@@ -32,6 +85,61 @@
                 "num_tags_positivas_encontradas": 1,
                 "lista_tags_positivas_encontradas": {
                     "operação": 2
+                }
+            }
+        }
+    },
+    {
+        "documento_id": "68903f0bdfe9452a5be5310a",
+        "title": "ATOS DE 31 DE JULHO DE 2025",
+        "causa_da_associacao": {
+            "tipo": "Monitoramento",
+            "id_regra": "665f3c676042b7f8da167e41",
+            "nome_regra": "Renata - investimentos",
+            "status_regra": "Ativo",
+            "detalhes_match": {
+                "captura_esperada": true,
+                "motivo": "Filtro 1: Todas as condições de tags positivas foram atendidas.",
+                "num_tags_positivas_encontradas": 1,
+                "lista_tags_positivas_encontradas": {
+                    "lca": 1
+                }
+            }
+        }
+    },
+    {
+        "documento_id": "68903f0bdfe9452a5be53030",
+        "title": "ATO Nº 8.693, DE 25 DE julho DE 2025",
+        "causa_da_associacao": {
+            "tipo": "Monitoramento",
+            "id_regra": "665f3c676042b7f8da167e41",
+            "nome_regra": "Renata - investimentos",
+            "status_regra": "Ativo",
+            "detalhes_match": {
+                "captura_esperada": true,
+                "motivo": "Filtro 1: Todas as condições de tags positivas foram atendidas.",
+                "num_tags_positivas_encontradas": 1,
+                "lista_tags_positivas_encontradas": {
+                    "cri": 1
+                }
+            }
+        }
+    },
+    {
+        "documento_id": "68903f0bdfe9452a5be53079",
+        "title": "RESOLUÇÃO ANATEL Nº 780, DE 1º DE AGOSTO DE 2025",
+        "causa_da_associacao": {
+            "tipo": "Monitoramento",
+            "id_regra": "665f3c676042b7f8da167e41",
+            "nome_regra": "Renata - investimentos",
+            "status_regra": "Ativo",
+            "detalhes_match": {
+                "captura_esperada": true,
+                "motivo": "Filtro 1: Todas as condições de tags positivas foram atendidas.",
+                "num_tags_positivas_encontradas": 2,
+                "lista_tags_positivas_encontradas": {
+                    "lca": 1,
+                    "cri": 3
                 }
             }
         }
@@ -86,114 +194,6 @@
                 "num_tags_positivas_encontradas": 1,
                 "lista_tags_positivas_encontradas": {
                     "ligação": 1
-                }
-            }
-        }
-    },
-    {
-        "documento_id": "68903f0bdfe9452a5be5310a",
-        "title": "ATOS DE 31 DE JULHO DE 2025",
-        "causa_da_associacao": {
-            "tipo": "Monitoramento",
-            "id_regra": "665f3c676042b7f8da167e41",
-            "nome_regra": "Renata - investimentos",
-            "status_regra": "Ativo",
-            "detalhes_match": {
-                "captura_esperada": true,
-                "motivo": "Filtro 1: Todas as condições de tags positivas foram atendidas.",
-                "num_tags_positivas_encontradas": 1,
-                "lista_tags_positivas_encontradas": {
-                    "lca": 1
-                }
-            }
-        }
-    },
-    {
-        "documento_id": "68903f0bdfe9452a5be5304b",
-        "title": "Resolução Interna Anatel nº 467, de 30 de julho de 2025",
-        "causa_da_associacao": {
-            "tipo": "Monitoramento",
-            "id_regra": "665f3c676042b7f8da167e41",
-            "nome_regra": "Renata - investimentos",
-            "status_regra": "Ativo",
-            "detalhes_match": {
-                "captura_esperada": true,
-                "motivo": "Filtro 1: Todas as condições de tags positivas foram atendidas.",
-                "num_tags_positivas_encontradas": 1,
-                "lista_tags_positivas_encontradas": {
-                    "cri": 1
-                }
-            }
-        }
-    },
-    {
-        "documento_id": "68903f0bdfe9452a5be53011",
-        "title": "ATOS DE 30 DE JULHO DE 2025",
-        "causa_da_associacao": {
-            "tipo": "Monitoramento",
-            "id_regra": "665f3c676042b7f8da167e41",
-            "nome_regra": "Renata - investimentos",
-            "status_regra": "Ativo",
-            "detalhes_match": {
-                "captura_esperada": true,
-                "motivo": "Filtro 1: Todas as condições de tags positivas foram atendidas.",
-                "num_tags_positivas_encontradas": 1,
-                "lista_tags_positivas_encontradas": {
-                    "cri": 8
-                }
-            }
-        }
-    },
-    {
-        "documento_id": "68903f0bdfe9452a5be53094",
-        "title": "ATOS DE 30 DE JULHO DE 2025",
-        "causa_da_associacao": {
-            "tipo": "Monitoramento",
-            "id_regra": "67c07841b853ab961e3a268f",
-            "nome_regra": "Aoc - monitoramento",
-            "status_regra": "Ativo",
-            "detalhes_match": {
-                "captura_esperada": true,
-                "motivo": "Filtro 1: Todas as condições de tags positivas foram atendidas.",
-                "num_tags_positivas_encontradas": 1,
-                "lista_tags_positivas_encontradas": {
-                    "ligação": 4
-                }
-            }
-        }
-    },
-    {
-        "documento_id": "68903f0bdfe9452a5be53030",
-        "title": "ATO Nº 8.693, DE 25 DE julho DE 2025",
-        "causa_da_associacao": {
-            "tipo": "Monitoramento",
-            "id_regra": "665f3c676042b7f8da167e41",
-            "nome_regra": "Renata - investimentos",
-            "status_regra": "Ativo",
-            "detalhes_match": {
-                "captura_esperada": true,
-                "motivo": "Filtro 1: Todas as condições de tags positivas foram atendidas.",
-                "num_tags_positivas_encontradas": 1,
-                "lista_tags_positivas_encontradas": {
-                    "cri": 1
-                }
-            }
-        }
-    },
-    {
-        "documento_id": "68903f0bdfe9452a5be53091",
-        "title": "ATOS DE 31 DE JULHO DE 2025",
-        "causa_da_associacao": {
-            "tipo": "Monitoramento",
-            "id_regra": "665f3c676042b7f8da167e41",
-            "nome_regra": "Renata - investimentos",
-            "status_regra": "Ativo",
-            "detalhes_match": {
-                "captura_esperada": true,
-                "motivo": "Filtro 1: Todas as condições de tags positivas foram atendidas.",
-                "num_tags_positivas_encontradas": 1,
-                "lista_tags_positivas_encontradas": {
-                    "cri": 1
                 }
             }
         }

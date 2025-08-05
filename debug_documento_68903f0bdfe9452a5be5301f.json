@@ -1,0 +1,39 @@
+{
+    "_id": "68903f0bdfe9452a5be5301f",
+    "origin": "ANATEL/DOU",
+    "source_oids": [
+        "63dbc9df0a3e40e0a45c883b",
+        "63dbca040a3e40e0a45c886c",
+        "63dbca040a3e40e0a45c886d",
+        "63dbca040a3e40e0a45c886e",
+        "63dbca050a3e40e0a45c886f"
+    ],
+    "norm_type": "Ato",
+    "normalized_type": "Atos Administrativos",
+    "consolidated_type": "Atos e Portarias",
+    "number": "9.048",
+    "publish_date": "2025-08-04T03:00:00",
+    "issuance_date": "2025-08-04T03:00:00",
+    "title": "ATO Nº 9.048, DE 30 DE JULHO DE 2025",
+    "subject": "ATO Nº 9.048, DE 30 DE JULHO DE 2025 Processo nº 53500.042315/2025-16. Outorga autorização para uso de Radiofrequências à RADIO EXCELSIOR S/A, executante do serviço Radiodifusão Sonora em Frequência Modulada, CNPJ nº 02.015.014/0001-04, no município de São Paulo/SP, visando execução do Serviço Auxiliar de Radiodifusão e Correlatos de Ligação para Transmissão de Programas, na referida cidade. Renat...",
+    "text": "<div class=\"texto-dou\">\n \n \n  <p class=\"identifica\">ATO Nº 9.048, DE 30 DE JULHO DE 2025</p>\n  <p class=\"dou-paragraph\">Processo nº 53500.042315/2025-16. Outorga autorização para uso de Radiofrequências à RADIO EXCELSIOR S/A, executante do serviço Radiodifusão Sonora em Frequência Modulada, CNPJ nº 02.015.014/0001-04, no município de São Paulo/SP, visando execução do Serviço Auxiliar de Radiodifusão e Correlatos de Ligação para Transmissão de Programas, na referida cidade.</p>\n  <p class=\"assina\">Renato Sales Bizerra Aguiar</p>\n  <p class=\"cargo\">Gerente</p>\n \n</div>",
+    "link": "https://www.in.gov.br/web/dou/-/ato-n-9.048-de-30-de-julho-de-2025-645932137",
+    "act_date": "2025-08-04T00:00:00",
+    "status": 2,
+    "section": "1",
+    "status_document": "",
+    "created_at": "2025-08-04T05:06:05.493000",
+    "group": "Contratos e Acordos",
+    "theme": "Homologações e Autorizações",
+    "tags": [
+        "radiodifusão sonora em frequência modulada",
+        "autorização"
+    ],
+    "restricted": false,
+    "metadata": {
+        "entities": [],
+        "norm_metadata": {}
+    },
+    "metadados": [],
+    "search_sync": "2025-08-04T05:06:05.515000"
+}
