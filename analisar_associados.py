@@ -1,5 +1,6 @@
 import json
 from bson import ObjectId
+from datetime import datetime
 from config import coll_norm, coll_normative_un, coll_monitor, coll_routing_rule
 from verificar_monitoramento import verificar_documento_por_monitor
 from analisar_taxonomia import analisar_associacao_por_taxonomia
@@ -66,32 +67,33 @@ def analisar_associacao_documento(documento_id, cliente_id):
         # Se a análise de taxonomia foi bem-sucedida ou falhou por outro motivo, retorna o resultado original.
         return resultado_taxonomia
 
-def executar_analise_associados(documentos_ids, cliente_id):
+def json_converter(o):
+    """Converte tipos não serializáveis para JSON."""
+    if isinstance(o, ObjectId):
+        return str(o)
+    if isinstance(o, datetime):
+        return o.isoformat()
+    raise TypeError(f"Object of type {type(o)} is not JSON serializable")
+
+def executar_analise_associados(documentos_ids, cliente_id, salvar_relatorio=True, salvar_debug=True):
     """
-    Orquestra a análise para uma lista de documentos associados a um cliente
-    e gera um relatório em JSON. Também salva um documento de exemplo para depuração.
+    Orquestra a análise para uma lista de documentos associados a um cliente,
+    retorna os resultados e, opcionalmente, salva relatórios.
     """
-    print(f"\nIniciando análise de causa para {len(documentos_ids)} documentos já associados...")
-    
     relatorio_final = []
     debug_documento_salvo = False
 
     for doc_id in documentos_ids:
-        # Obter o título do normativo para o relatório
         normativo = coll_norm.find_one({"_id": ObjectId(doc_id)})
         titulo = normativo.get("title", "Título não encontrado") if normativo else "Documento não encontrado"
 
-        # Para depuração, salva o primeiro documento da lista em um arquivo separado
-        if not debug_documento_salvo and normativo:
+        if salvar_debug and not debug_documento_salvo and normativo:
             nome_arquivo_debug = f"debug_documento_{doc_id}.json"
             with open(nome_arquivo_debug, "w", encoding='utf-8') as f:
-                # Reutiliza o conversor de JSON para garantir que ObjectId seja tratado
-                from listar_regras_cliente import json_converter
                 json.dump(normativo, f, indent=4, ensure_ascii=False, default=json_converter)
             print(f"Arquivo de depuração salvo: {nome_arquivo_debug}")
             debug_documento_salvo = True
 
-        # Analisar o motivo da associação
         causa_associacao = analisar_associacao_documento(doc_id, cliente_id)
         
         relatorio_final.append({
@@ -100,12 +102,13 @@ def executar_analise_associados(documentos_ids, cliente_id):
             "causa_da_associacao": causa_associacao
         })
 
-    # Salvar o relatório final em um arquivo JSON
-    nome_arquivo = f"relatorio_analise_associados_{cliente_id}.json"
-    with open(nome_arquivo, "w", encoding='utf-8') as f:
-        json.dump(relatorio_final, f, indent=4, ensure_ascii=False)
+    if salvar_relatorio:
+        nome_arquivo = f"relatorio_analise_associados_{cliente_id}.json"
+        with open(nome_arquivo, "w", encoding='utf-8') as f:
+            json.dump(relatorio_final, f, indent=4, ensure_ascii=False, default=json_converter)
+        print(f"Análise de associados concluída. Relatório salvo em: {nome_arquivo}")
         
-    print(f"Análise de associados concluída. Relatório salvo em: {nome_arquivo}")
+    return relatorio_final
 
 if __name__ == '__main__':
     # Exemplo de como chamar a função (para testes futuros)

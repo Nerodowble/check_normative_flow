@@ -1,21 +1,29 @@
+import json
 from datetime import datetime
-from bson import ObjectId  # Import ObjectId para conversão de ID
+from bson import ObjectId
 from pymongo import MongoClient
 from buscar_normativos import buscar_normativos
 from verificar_normativos_clientes import verificar_normativos_cliente
 from exibir_relatorio import exibir_relatorio
-from verificar_taxonomia import verificar_taxonomia
 from verificar_monitoramento import executar_verificacao_monitoramento
 from analisar_associados import executar_analise_associados
 from listar_regras_cliente import listar_regras_cliente
-from relatorio_avancado import gerar_relatorio_avancado_pos_envio
+from obter_origens_cliente import obter_todas_origens
 
-# Configuração da conexão com o MongoDB
+def json_converter(o):
+    """Converte tipos não serializáveis para JSON."""
+    if isinstance(o, ObjectId):
+        return str(o)
+    if isinstance(o, datetime):
+        return o.isoformat()
+    if isinstance(o, set):
+        return list(o)
+    raise TypeError(f"Object of type {type(o)} is not JSON serializable")
+
 def conectar_mongodb():
     username = "readOnlyProd"
     password = "by76HMOjhhf38Aiq"
     uri = f"mongodb+srv://{username}:{password}@lbprod-pri.cuho0.mongodb.net/?tls=true"
-
     try:
         client = MongoClient(uri)
         print("Conexão com o MongoDB realizada com sucesso!")
@@ -24,119 +32,107 @@ def conectar_mongodb():
         print(f"Erro ao conectar ao MongoDB: {e}")
         exit(1)
 
-# Criar a conexão com o MongoDB
 client = conectar_mongodb()
 db = client['legalbot_platform']
-coll_un = db['un']  # Coleção de clientes
+coll_un = db['un']
 
 def obter_cliente_id(cliente_id=None, cliente_nome=None):
-    """
-    Retorna o ID do cliente com base no ID fornecido ou no nome usando regex.
-    """
     if cliente_id:
         try:
             cliente = coll_un.find_one({"_id": ObjectId(cliente_id)})
-            if cliente:
-                print(f"Cliente encontrado pelo ID: {cliente}")
-                return cliente["_id"]
-            else:
-                print("Cliente não encontrado com o ID fornecido.")
-                return None
-        except Exception as e:
-            print("Erro ao buscar cliente pelo ID:", e)
+            return cliente["_id"] if cliente else None
+        except Exception:
             return None
     elif cliente_nome:
         cliente = coll_un.find_one({"name": {"$regex": f"^{cliente_nome}$", "$options": "i"}})
-        if cliente:
-            print(f"Cliente encontrado pelo nome: {cliente}")
-            return cliente["_id"]
-        else:
-            print("Cliente não encontrado com o nome fornecido.")
-            return None
-    else:
-        print("Nenhum ID ou nome de cliente foi fornecido.")
-        return None
+        return cliente["_id"] if cliente else None
+    return None
 
-if __name__ == "__main__":
-    # Solicitar ao usuário o ID ou o nome do cliente
-    escolha_cliente = input("Você quer informar o ID ou o Nome do cliente? (Digite 'ID' ou 'Nome'): ").strip().lower()
+def executar_analise_por_origem(cliente_id_str, origin, data_inicial, data_final):
+    """
+    Executa o pipeline de análise para uma origem, operando de forma mais silenciosa.
+    """
+    print(f"Analisando origem: {origin}...")
     
-    cliente_id = None
-    cliente_nome = None
-
-    if escolha_cliente == 'id':
-        cliente_id = input("Informe o ID do cliente: ").strip()
-    elif escolha_cliente == 'nome':
-        cliente_nome = input("Informe o Nome do cliente: ").strip()
-    else:
-        print("Entrada inválida. Por favor, execute o script novamente e informe 'ID' ou 'Nome'.")
-        exit(1)
-
-    # Obter o ID do cliente para usar nas próximas operações
-    cliente_id_obj = obter_cliente_id(cliente_id=cliente_id, cliente_nome=cliente_nome)
-    if not cliente_id_obj:
-        print("Falha ao localizar o cliente. Encerrando o script.")
-        exit(1)
-    
-    cliente_id_str = str(cliente_id_obj)
-
-    # Etapa Preliminar: Listar todas as regras ativas para o cliente
-    listar_regras_cliente(cliente_id_str)
-    
-    # Solicitar a origem e as datas de pesquisa
-    origin = input("Informe a origem do normativo (ex: Receita Federal/DOU): ")
-    
-    # Solicitar as datas no formato DD/MM/YYYY e convertê-las
-    data_inicial = input("Informe a data inicial (formato DD/MM/YYYY): ")
-    data_final = input("Informe a data final (formato DD/MM/YYYY): ")
-
-    # Converter as datas para o formato esperado (YYYY-MM-DD)
-    try:
-        data_inicial = datetime.strptime(data_inicial, "%d/%m/%Y").strftime("%Y-%m-%d")
-        data_final = datetime.strptime(data_final, "%d/%m/%Y").strftime("%Y-%m-%d")
-    except ValueError:
-        print("Formato de data inválido. Encerrando o script.")
-        exit(1)
-
-    # Etapa 1: Buscar normativos pela origem e data
     normativos = buscar_normativos(origin, data_inicial, data_final)
+    if not normativos:
+        return {"origem": origin, "status": "sem_normativos"}
 
-    # Etapa 2: Verificar normativos para o cliente específico
     clientes_dict, documentos_faltantes = verificar_normativos_cliente(normativos, cliente_id=cliente_id_str)
 
-    # Etapa 3: Para cada cliente com documentos faltantes, verificar a associação de taxonomia
-    for cliente_nome, dados_cliente in clientes_dict.items():
-        if dados_cliente["documentos_faltantes"]:
-            for doc in dados_cliente["documentos_faltantes"]:
-                normativo_id = str(doc["_id"])
-                resultado_taxonomia = verificar_taxonomia(normativo_id)
-
-                # Adiciona a informação de taxonomia ao relatório apenas uma vez
-                if resultado_taxonomia:
-                    if "taxonomias_associadas" not in dados_cliente:
-                        dados_cliente["taxonomias_associadas"] = []
-                    dados_cliente["taxonomias_associadas"].append({
-                        "normativo_id": normativo_id,
-                        "taxonomia": resultado_taxonomia[0]["taxonomia"],
-                        "descricao": resultado_taxonomia[0]["descricao"],
-                        "associado_ao_cliente": resultado_taxonomia[0]["associado_ao_cliente"]
-                    })
-
-    # Etapa 4: Exibir relatório final chamando a função exibir_relatorio
-    exibir_relatorio(clientes_dict, documentos_faltantes)
-
-    # Etapa 5: Executar a verificação de monitoramento para os documentos FALTANTES
-    if documentos_faltantes:
-        executar_verificacao_monitoramento(cliente_id_str, origin, data_inicial, data_final, documentos_faltantes)
-        print("Verificação de monitoramento concluída.")
-    else:
-        print("Nenhum documento faltante para analisar no monitoramento.")
-
-    # Etapa 6: Analisar a causa da associação para os documentos ENCONTRADOS
-    for cliente_nome, dados_cliente in clientes_dict.items():
+    # Análise de faltantes (retorna o relatório em vez de salvar)
+    relatorio_faltantes = executar_verificacao_monitoramento(cliente_id_str, origin, data_inicial, data_final, documentos_faltantes, salvar_relatorio=False)
+    
+    # Análise de associados (retorna o relatório em vez de salvar)
+    relatorio_associados = None
+    for dados_cliente in clientes_dict.values():
         documentos_associados_ids = dados_cliente.get("documentos_ids")
         if documentos_associados_ids:
-            executar_analise_associados(list(documentos_associados_ids), cliente_id_str)
+            relatorio_associados = executar_analise_associados(list(documentos_associados_ids), cliente_id_str, salvar_relatorio=False, salvar_debug=False)
 
-    # Etapa 7: Gerar o Relatório Avançado de Pós-Envio
-    gerar_relatorio_avancado_pos_envio(cliente_id_str, origin)
+    # Pega os dados do cliente apenas se o dicionário não estiver vazio
+    dados_cliente = next(iter(clientes_dict.values()), {}) if clientes_dict else {}
+
+    return {
+        "origem": origin,
+        "status": "analise_concluida",
+        "contagem_status": dados_cliente,
+        "analise_documentos_associados": relatorio_associados,
+        "analise_documentos_faltantes": relatorio_faltantes
+    }
+
+if __name__ == "__main__":
+    escolha_cliente = input("Você quer informar o ID ou o Nome do cliente? (Digite 'ID' ou 'Nome'): ").strip().lower()
+    cliente_id_input = None
+    cliente_nome_input = None
+    if escolha_cliente == 'id':
+        cliente_id_input = input("Informe o ID do cliente: ").strip()
+    elif escolha_cliente == 'nome':
+        cliente_nome_input = input("Informe o Nome do cliente: ").strip()
+    else:
+        print("Entrada inválida.")
+        exit(1)
+
+    cliente_id_obj = obter_cliente_id(cliente_id=cliente_id_input, cliente_nome=cliente_nome_input)
+    if not cliente_id_obj:
+        print("Cliente não encontrado.")
+        exit(1)
+    cliente_id_str = str(cliente_id_obj)
+
+    listar_regras_cliente(cliente_id_str)
+
+    lista_de_origens = []
+    escolha_origem = input("Deseja informar uma origem específica? (s/n): ").strip().lower()
+    if escolha_origem == 's':
+        origem_especifica = input("Informe a origem do normativo (ex: Receita Federal/DOU): ")
+        lista_de_origens.append(origem_especifica)
+    elif escolha_origem == 'n':
+        print("Buscando todas as origens associadas ao cliente...")
+        lista_de_origens = obter_todas_origens(cliente_id_str)
+        print(f"Encontradas {len(lista_de_origens)} origens. Iniciando análise para cada uma.")
+    else:
+        print("Entrada inválida.")
+        exit(1)
+
+    data_inicial_str = input("Informe a data inicial (formato DD/MM/YYYY): ")
+    data_final_str = input("Informe a data final (formato DD/MM/YYYY): ")
+    try:
+        data_inicial = datetime.strptime(data_inicial_str, "%d/%m/%Y").strftime("%Y-%m-%d")
+        data_final = datetime.strptime(data_final_str, "%d/%m/%Y").strftime("%Y-%m-%d")
+    except ValueError:
+        print("Formato de data inválido.")
+        exit(1)
+
+    relatorio_final_agregado = []
+    for origem in lista_de_origens:
+        resultado_origem = executar_analise_por_origem(cliente_id_str, origem, data_inicial, data_final)
+        relatorio_final_agregado.append(resultado_origem)
+
+    if relatorio_final_agregado:
+        nome_arquivo_final = f"relatorio_completo_{cliente_id_str}_{datetime.now().strftime('%Y%m%d')}.json"
+        with open(nome_arquivo_final, "w", encoding='utf-8') as f:
+            json.dump(relatorio_final_agregado, f, indent=4, ensure_ascii=False, default=json_converter)
+        print(f"\nAnálise completa para todas as origens concluída.")
+        print(f"Relatório final agregado salvo em: {nome_arquivo_final}")
+    else:
+        print("\nNenhuma análise foi executada ou nenhum resultado foi gerado.")

@@ -1,200 +1,85 @@
 [
     {
-        "documento_id": "68903f0bdfe9452a5be53011",
-        "title": "ATOS DE 30 DE JULHO DE 2025",
+        "documento_id": "6891a139ae180ccc0d066adc",
+        "title": "PORTARIA SGA/AGU Nº 1.308, DE 1º DE AGOSTO DE 2025",
         "causa_da_associacao": {
-            "tipo": "Monitoramento",
-            "id_regra": "665f3c676042b7f8da167e41",
-            "nome_regra": "Renata - investimentos",
-            "status_regra": "Ativo",
+            "tipo": "Encaminhamento Manual",
+            "detalhes": "O documento foi localizado na Busca e encaminhado manualmente por um usuário para uma ou mais áreas.",
             "detalhes_match": {
-                "captura_esperada": true,
-                "motivo": "Filtro 1: Todas as condições de tags positivas foram atendidas.",
-                "num_tags_positivas_encontradas": 1,
-                "lista_tags_positivas_encontradas": {
-                    "cri": 8
-                }
+                "primeiro_encaminhamento_em": "2025-08-05T06:18:28.780000",
+                "total_areas_associadas": 3
             }
         }
     },
     {
-        "documento_id": "68903f0bdfe9452a5be53091",
-        "title": "ATOS DE 31 DE JULHO DE 2025",
+        "documento_id": "6891a139ae180ccc0d06693f",
+        "title": "PORTARIA SGCS/AGU Nº 194, DE 31 DE JULHO DE 2025",
         "causa_da_associacao": {
-            "tipo": "Monitoramento",
-            "id_regra": "665f3c676042b7f8da167e41",
-            "nome_regra": "Renata - investimentos",
-            "status_regra": "Ativo",
+            "tipo": "Encaminhamento Manual",
+            "detalhes": "O documento foi localizado na Busca e encaminhado manualmente por um usuário para uma ou mais áreas.",
             "detalhes_match": {
-                "captura_esperada": true,
-                "motivo": "Filtro 1: Todas as condições de tags positivas foram atendidas.",
-                "num_tags_positivas_encontradas": 1,
-                "lista_tags_positivas_encontradas": {
-                    "cri": 1
-                }
+                "primeiro_encaminhamento_em": "2025-08-05T06:20:03.259000",
+                "total_areas_associadas": 3
             }
         }
     },
     {
-        "documento_id": "68903f0bdfe9452a5be53094",
-        "title": "ATOS DE 30 DE JULHO DE 2025",
+        "documento_id": "6891a139ae180ccc0d0669f5",
+        "title": "PORTARIA AGU Nº 433, DE 1º DE AGOSTO DE 2025",
         "causa_da_associacao": {
-            "tipo": "Monitoramento",
-            "id_regra": "67c07841b853ab961e3a268f",
-            "nome_regra": "Aoc - monitoramento",
-            "status_regra": "Ativo",
+            "tipo": "Encaminhamento Manual",
+            "detalhes": "O documento foi localizado na Busca e encaminhado manualmente por um usuário para uma ou mais áreas.",
             "detalhes_match": {
-                "captura_esperada": true,
-                "motivo": "Filtro 1: Todas as condições de tags positivas foram atendidas.",
-                "num_tags_positivas_encontradas": 1,
-                "lista_tags_positivas_encontradas": {
-                    "ligação": 4
-                }
+                "primeiro_encaminhamento_em": "2025-08-05T06:18:52.040000",
+                "total_areas_associadas": 3
             }
         }
     },
     {
-        "documento_id": "68903f0bdfe9452a5be5304b",
-        "title": "Resolução Interna Anatel nº 467, de 30 de julho de 2025",
+        "documento_id": "6891a139ae180ccc0d0668c9",
+        "title": "PORTARIA SGA/AGU Nº 1.302, DE 31 DE JULHO DE 2025",
         "causa_da_associacao": {
-            "tipo": "Monitoramento",
-            "id_regra": "665f3c676042b7f8da167e41",
-            "nome_regra": "Renata - investimentos",
-            "status_regra": "Ativo",
+            "tipo": "Encaminhamento Manual",
+            "detalhes": "O documento foi localizado na Busca e encaminhado manualmente por um usuário para uma ou mais áreas.",
             "detalhes_match": {
-                "captura_esperada": true,
-                "motivo": "Filtro 1: Todas as condições de tags positivas foram atendidas.",
-                "num_tags_positivas_encontradas": 1,
-                "lista_tags_positivas_encontradas": {
-                    "cri": 1
-                }
+                "primeiro_encaminhamento_em": "2025-08-05T06:18:28.779000",
+                "total_areas_associadas": 3
             }
         }
     },
     {
-        "documento_id": "68903f0bdfe9452a5be53117",
-        "title": "ATO Nº 9.143, DE 31 DE JULHO DE 2025",
+        "documento_id": "68928669165c0240deef716a",
+        "title": "EXTRATO DE CONTRATO Nº 15/2025 - UASG 110096",
         "causa_da_associacao": {
-            "tipo": "Monitoramento",
-            "id_regra": "67c07841b853ab961e3a268f",
-            "nome_regra": "Aoc - monitoramento",
-            "status_regra": "Ativo",
+            "tipo": "Encaminhamento Manual",
+            "detalhes": "O documento foi localizado na Busca e encaminhado manualmente por um usuário para uma ou mais áreas.",
             "detalhes_match": {
-                "captura_esperada": true,
-                "motivo": "Filtro 1: Todas as condições de tags positivas foram atendidas.",
-                "num_tags_positivas_encontradas": 1,
-                "lista_tags_positivas_encontradas": {
-                    "operação": 2
-                }
+                "primeiro_encaminhamento_em": "2025-08-05T22:44:15.890000",
+                "total_areas_associadas": 3
             }
         }
     },
     {
-        "documento_id": "68903f0bdfe9452a5be5310a",
-        "title": "ATOS DE 31 DE JULHO DE 2025",
+        "documento_id": "6891a139ae180ccc0d066a3c",
+        "title": "PORTARIA SGA/AGU Nº 1.292, DE 29 DE JULHO DE 2025",
         "causa_da_associacao": {
-            "tipo": "Monitoramento",
-            "id_regra": "665f3c676042b7f8da167e41",
-            "nome_regra": "Renata - investimentos",
-            "status_regra": "Ativo",
+            "tipo": "Encaminhamento Manual",
+            "detalhes": "O documento foi localizado na Busca e encaminhado manualmente por um usuário para uma ou mais áreas.",
             "detalhes_match": {
-                "captura_esperada": true,
-                "motivo": "Filtro 1: Todas as condições de tags positivas foram atendidas.",
-                "num_tags_positivas_encontradas": 1,
-                "lista_tags_positivas_encontradas": {
-                    "lca": 1
-                }
+                "primeiro_encaminhamento_em": "2025-08-05T06:18:28.779000",
+                "total_areas_associadas": 3
             }
         }
     },
     {
-        "documento_id": "68903f0bdfe9452a5be53030",
-        "title": "ATO Nº 8.693, DE 25 DE julho DE 2025",
+        "documento_id": "6891a139ae180ccc0d06686e",
+        "title": "PORTARIA AGU Nº 432, DE 1º DE AGOSTO DE 2025",
         "causa_da_associacao": {
-            "tipo": "Monitoramento",
-            "id_regra": "665f3c676042b7f8da167e41",
-            "nome_regra": "Renata - investimentos",
-            "status_regra": "Ativo",
+            "tipo": "Encaminhamento Manual",
+            "detalhes": "O documento foi localizado na Busca e encaminhado manualmente por um usuário para uma ou mais áreas.",
             "detalhes_match": {
-                "captura_esperada": true,
-                "motivo": "Filtro 1: Todas as condições de tags positivas foram atendidas.",
-                "num_tags_positivas_encontradas": 1,
-                "lista_tags_positivas_encontradas": {
-                    "cri": 1
-                }
-            }
-        }
-    },
-    {
-        "documento_id": "68903f0bdfe9452a5be53079",
-        "title": "RESOLUÇÃO ANATEL Nº 780, DE 1º DE AGOSTO DE 2025",
-        "causa_da_associacao": {
-            "tipo": "Monitoramento",
-            "id_regra": "665f3c676042b7f8da167e41",
-            "nome_regra": "Renata - investimentos",
-            "status_regra": "Ativo",
-            "detalhes_match": {
-                "captura_esperada": true,
-                "motivo": "Filtro 1: Todas as condições de tags positivas foram atendidas.",
-                "num_tags_positivas_encontradas": 2,
-                "lista_tags_positivas_encontradas": {
-                    "lca": 1,
-                    "cri": 3
-                }
-            }
-        }
-    },
-    {
-        "documento_id": "68903f0bdfe9452a5be53141",
-        "title": "ATO Nº 9.096, DE 31 DE JULHO DE 2025",
-        "causa_da_associacao": {
-            "tipo": "Monitoramento",
-            "id_regra": "67c07841b853ab961e3a268f",
-            "nome_regra": "Aoc - monitoramento",
-            "status_regra": "Ativo",
-            "detalhes_match": {
-                "captura_esperada": true,
-                "motivo": "Filtro 1: Todas as condições de tags positivas foram atendidas.",
-                "num_tags_positivas_encontradas": 1,
-                "lista_tags_positivas_encontradas": {
-                    "ligação": 1
-                }
-            }
-        }
-    },
-    {
-        "documento_id": "68903f0bdfe9452a5be5301f",
-        "title": "ATO Nº 9.048, DE 30 DE JULHO DE 2025",
-        "causa_da_associacao": {
-            "tipo": "Monitoramento",
-            "id_regra": "67c07841b853ab961e3a268f",
-            "nome_regra": "Aoc - monitoramento",
-            "status_regra": "Ativo",
-            "detalhes_match": {
-                "captura_esperada": true,
-                "motivo": "Filtro 1: Todas as condições de tags positivas foram atendidas.",
-                "num_tags_positivas_encontradas": 1,
-                "lista_tags_positivas_encontradas": {
-                    "ligação": 2
-                }
-            }
-        }
-    },
-    {
-        "documento_id": "68903f0bdfe9452a5be530eb",
-        "title": "ATO Nº 9.097, DE 31 DE JULHO DE 2025",
-        "causa_da_associacao": {
-            "tipo": "Monitoramento",
-            "id_regra": "67c07841b853ab961e3a268f",
-            "nome_regra": "Aoc - monitoramento",
-            "status_regra": "Ativo",
-            "detalhes_match": {
-                "captura_esperada": true,
-                "motivo": "Filtro 1: Todas as condições de tags positivas foram atendidas.",
-                "num_tags_positivas_encontradas": 1,
-                "lista_tags_positivas_encontradas": {
-                    "ligação": 1
-                }
+                "primeiro_encaminhamento_em": "2025-08-05T06:18:52.040000",
+                "total_areas_associadas": 3
             }
         }
     }

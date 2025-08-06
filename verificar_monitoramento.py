@@ -6,7 +6,7 @@ from collections import Counter
 
 # Função auxiliar para log detalhado
 def log_detalhado(mensagem):
-    with open("log_verificacao_monitoramento.txt", "a") as log_file:
+    with open("log_verificacao_monitoramento.txt", "a", encoding="utf-8") as log_file:
         log_file.write(mensagem + "\n")
 
 def buscar_monitores(cliente_id):
@@ -137,9 +137,8 @@ def verificar_documento_por_monitor(documento, monitor):
 
 def verificar_monitoramento(cliente_id, origem, data_inicial, data_final, documentos_faltantes):
     """
-    Realiza a verificação de monitoramento para os documentos faltantes, com base nas regras dos monitores.
+    Realiza a verificação de monitoramento para os documentos faltantes e retorna o relatório.
     """
-    print(f"Iniciando verificação de monitoramento para o cliente com ID '{cliente_id}'...")
     log_detalhado(f"[INFO] Iniciando verificação para cliente ID {cliente_id} entre {data_inicial} e {data_final} para origem {origem}")
     
     monitores = buscar_monitores(cliente_id)
@@ -157,26 +156,22 @@ def verificar_monitoramento(cliente_id, origem, data_inicial, data_final, docume
                 "reason_not_captured": []
             }
             
-            # Verifica o documento em cada monitor para o cliente
             for monitor in monitores:
                 resultado_monitor = verificar_documento_por_monitor(documento, monitor)
-                
-                # Adiciona o resultado detalhado ao relatório
                 doc_resultado["reason_not_captured"].append({
                     "monitor_id": str(monitor["_id"]),
                     **resultado_monitor
                 })
-                log_detalhado(f"[INFO] Resultado para monitor {monitor['_id']}: {resultado_monitor}")
-
             relatorio.append(doc_resultado)
-
-    # Salva o relatório em um arquivo JSON
-    with open(f"relatorio_monitoramento_{cliente_id}.json", "w") as f:
-        json.dump(relatorio, f, indent=4, ensure_ascii=False)
     
-    print("Verificação de monitoramento concluída e salva em JSON.")
-    log_detalhado(f"[INFO] Relatório final salvo para cliente ID {cliente_id}")
+    return relatorio
 
 # Função para ser chamada a partir do main
-def executar_verificacao_monitoramento(cliente_id, origem, data_inicial, data_final, documentos_faltantes):
-    verificar_monitoramento(cliente_id, origem, data_inicial, data_final, documentos_faltantes)
+def executar_verificacao_monitoramento(cliente_id, origem, data_inicial, data_final, documentos_faltantes, salvar_relatorio=True):
+    relatorio = verificar_monitoramento(cliente_id, origem, data_inicial, data_final, documentos_faltantes)
+    if salvar_relatorio:
+        # Salva o relatório em um arquivo JSON
+        with open(f"relatorio_monitoramento_{cliente_id}.json", "w") as f:
+            json.dump(relatorio, f, indent=4, ensure_ascii=False)
+        print("Verificação de monitoramento concluída e salva em JSON.")
+    log_detalhado(f"[INFO] Relatório final salvo para cliente ID {cliente_id}")
